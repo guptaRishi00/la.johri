@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -13,9 +14,9 @@ export const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: "Atelier", href: "#" },
-    { name: "Vault", href: "#" },
-    { name: "Curation", href: "#" },
+    { name: "Atelier", href: "/atelier" },
+    { name: "Vault", href: "/vault" },
+    { name: "Curation", href: "/curation" },
   ];
 
   return (
@@ -59,10 +60,15 @@ export const Navbar = () => {
         </div>
 
         {/* Center: Logo (Scales responsively) */}
-        <div className="absolute left-1/2 -translate-x-1/2 text-center pointer-events-none transition-all duration-500">
-          <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-serif tracking-[0.3em] md:tracking-[0.5em] text-[#c2a35d] font-light">
-            LA.JOHRI
-          </h1>
+
+        <div className="absolute left-1/2 -translate-x-1/2 text-center transition-all duration-500">
+          <Link href="/">
+            {" "}
+            {/* Add this Link wrapper */}
+            <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-serif tracking-[0.3em] md:tracking-[0.5em] text-[#c2a35d] font-light cursor-pointer">
+              LA.JOHRI
+            </h1>
+          </Link>
         </div>
 
         {/* Right Side: Concierge & CTA */}
@@ -70,9 +76,12 @@ export const Navbar = () => {
           <div className="hidden xl:block text-[9px] uppercase tracking-[0.4em] text-emerald-100/40">
             Private Concierge Open
           </div>
-          <button className="px-6 md:px-10 py-2.5 md:py-3 bg-[#c2a35d]/10 hover:bg-[#c2a35d] text-[#c2a35d] hover:text-[#021a14] border border-[#c2a35d]/30 text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.4em] transition-all duration-700 font-medium whitespace-nowrap">
+          <Link
+            href="/enquire"
+            className="px-6 md:px-10 py-2.5 md:py-3 bg-[#c2a35d]/10 hover:bg-[#c2a35d] text-[#c2a35d] hover:text-[#021a14] border border-[#c2a35d]/30 text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.4em] transition-all duration-700 font-medium whitespace-nowrap"
+          >
             Enquire
-          </button>
+          </Link>
         </div>
       </nav>
 
@@ -102,9 +111,12 @@ export const Navbar = () => {
               ))}
 
               <div className="flex items-center justify-center gap-4 md:gap-12">
-                <button className="px-6 md:px-10 py-2.5 md:py-3 bg-[#c2a35d]/10 hover:bg-[#c2a35d] text-[#c2a35d] hover:text-[#021a14] border border-[#c2a35d]/30 text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.4em] transition-all duration-700 font-medium whitespace-nowrap">
+                <Link
+                  href="/enquire"
+                  className="px-6 md:px-10 py-2.5 md:py-3 bg-[#c2a35d]/10 hover:bg-[#c2a35d] text-[#c2a35d] hover:text-[#021a14] border border-[#c2a35d]/30 text-[9px] md:text-[10px] uppercase tracking-[0.4em] transition-all duration-700 font-medium whitespace-nowrap"
+                >
                   Enquire
-                </button>
+                </Link>
               </div>
               <motion.div
                 initial={{ opacity: 0 }}
