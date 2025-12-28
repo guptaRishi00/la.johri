@@ -14,9 +14,8 @@ export const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: "Atelier", href: "/atelier" },
-    { name: "Vault", href: "/vault" },
-    { name: "Curation", href: "/curation" },
+    { name: "About", href: "/about" },
+    { name: "Products", href: "/products" },
   ];
 
   return (
@@ -115,7 +114,7 @@ export const Navbar = () => {
                   href="/enquire"
                   className="px-6 md:px-10 py-2.5 md:py-3 bg-[#c2a35d]/10 hover:bg-[#c2a35d] text-[#c2a35d] hover:text-[#021a14] border border-[#c2a35d]/30 text-[9px] md:text-[10px] uppercase tracking-[0.4em] transition-all duration-700 font-medium whitespace-nowrap"
                 >
-                  Enquire
+                  Contact
                 </Link>
               </div>
               <motion.div

@@ -101,13 +101,21 @@ export default function EnquirePage() {
 
       {/* Footer Contact Details */}
       <section className="py-24 border-t border-stone-200 bg-stone-50 px-6">
-        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 text-center">
           <div className="space-y-2">
             <h6 className="text-[8px] uppercase tracking-[0.4em] text-stone-400">
               Email
             </h6>
             <p className="text-[10px] tracking-widest text-[#021a14]">
               concierge@lajohri.com
+            </p>
+          </div>
+          <div className="space-y-2">
+            <h6 className="text-[8px] uppercase tracking-[0.4em] text-stone-400">
+              Raipur
+            </h6>
+            <p className="text-[10px] tracking-widest text-[#021a14]">
+              Chhattisgarh, India
             </p>
           </div>
           <div className="space-y-2">
