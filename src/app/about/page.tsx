@@ -6,7 +6,6 @@ import {
   Scale,
   Globe,
   GraduationCap,
-  Gem,
   ArrowRight,
   Hammer,
   PenTool,
@@ -32,25 +31,23 @@ export default function AboutPage() {
                 strokeWidth={1}
               />
               <span className="text-[#c2a35d] uppercase tracking-[0.8em] text-[10px] block">
-                The Master Gemmologist
+                The graduate gemmologist
               </span>
             </div>
             <h1 className="text-5xl md:text-7xl font-serif text-stone-100 font-light italic leading-tight mb-8">
-              Expertise <br /> Beyond the Eye.
+              Mastery <br /> Beyond the Sight.
             </h1>
             <p className="text-emerald-100/60 font-light leading-relaxed tracking-wide text-sm mb-6">
-              LA.JOHRI is led by a specialist holding a{" "}
-              <span className="text-[#c2a35d]">
-                Graduate Diploma in Gemmology
-              </span>
-              . This academic foundation ensures that every stone is evaluated
+              LA.JOHRI is led by a specialist holding a diploma in gemology.
+              This academic foundation ensures that every stone is evaluated
               through the rigorous lens of crystalline integrity and optical
-              excellence.
+              excellence
             </p>
             <p className="text-emerald-100/40 font-light leading-relaxed text-xs uppercase tracking-widest">
-              Our selection process rejects 98% of the gems we inspect. We seek
-              only those with "Inner Light"—a specific combination of saturation
-              and transparency.
+              We meticulously select only the finest gems, accepting just those
+              that reveal a rare combination of deep saturation and remarkable
+              translucency, showing an inner light that meets our uncompromising
+              standards of beauty and integrity.”
             </p>
           </motion.div>
 
@@ -97,45 +94,36 @@ export default function AboutPage() {
                 <span className="italic text-[#c2a35d]">Source.</span>
               </h2>
               <p className="text-stone-600 font-light text-sm leading-relaxed mb-12">
-                We bypass international trade shows and brokers. Instead, we
-                maintain direct relationships with mining communities in
-                specific geologies known for chemical purity.
+                We bypass international brokers and middlemen, maintaining
+                direct relationships with mining communities in specific
+                geologies known for high-quality gems.
               </p>
 
               <div className="space-y-8 border-l border-[#c2a35d]/30 pl-8">
                 {[
                   {
-                    region: "Mogok, Burma",
-                    stone: "Pigeon Blood Rubies",
-                    desc: "The world's premier source for fluorescent red corundum.",
+                    region: "The historic lands of India",
+                    desc: "A timeless gem trading heritage.",
                   },
                   {
-                    region: "Kashmir Valley",
-                    stone: "Cornflower Sapphires",
-                    desc: "Velvety blue hues sourced from historical deposits.",
+                    region:
+                      "The legendary sapphire fields of Kashmir and Sri Lanka",
+                    desc: "Celebrated for their unparalleled quality.",
                   },
                   {
-                    region: "Merelani Hills, Tanzania",
-                    stone: "Royal Tanzanite",
-                    desc: "The only known source on earth for this trichroic gem.",
+                    region: "The rich mineral belts of Africa",
+                    desc: "Known for diverse and abundant gems.",
                   },
                   {
-                    region: "Musha, Zambia",
-                    stone: "Vivid Emeralds",
-                    desc: "Ethically mined stones with deep, bluish-green saturation.",
+                    region: "Other global sources",
+                    desc: "A diverse array from regions around the world.",
                   },
                 ].map((item, i) => (
                   <div key={i} className="group cursor-default">
-                    <h4 className="text-[#021a14] font-serif text-lg mb-1 group-hover:text-[#c2a35d] transition-colors">
+                    <h4 className="text-[#021a14] font-serif text-lg mb-2 group-hover:text-[#c2a35d] transition-colors">
                       {item.region}
                     </h4>
-                    <div className="flex items-center gap-2 mb-1">
-                      <Gem className="w-3 h-3 text-[#c2a35d]" />
-                      <span className="text-xs uppercase tracking-widest text-stone-500">
-                        {item.stone}
-                      </span>
-                    </div>
-                    <p className="text-[10px] text-stone-400 leading-relaxed max-w-sm">
+                    <p className="text-xs text-stone-500 leading-relaxed max-w-sm uppercase tracking-wider">
                       {item.desc}
                     </p>
                   </div>
@@ -164,8 +152,8 @@ export default function AboutPage() {
                 </span>
               </h2>
               <p className="text-stone-600 font-light text-sm leading-relaxed mb-12">
-                Traditional luxury jewelry is marked up 8-10x to cover the costs
-                of middlemen, retail rent, and branding. We operate differently.
+                Traditional luxury jewelry is heavily marked up to cover
+                middlemen, retail costs, and branding. We operate differently.
               </p>
 
               {/* COMPARISON VISUAL */}
@@ -175,20 +163,27 @@ export default function AboutPage() {
                   <h5 className="text-xs uppercase tracking-widest text-stone-500 mb-4">
                     Traditional Retail
                   </h5>
-                  <div className="flex items-center justify-between text-[10px] text-stone-400 uppercase tracking-wider mb-2">
+                  <div className="flex flex-wrap items-center justify-between gap-y-2 text-[9px] text-stone-400 uppercase tracking-wider mb-2">
                     <span>Mine</span>
+                    <ArrowRight className="w-3 h-3" />
+                    <span>Manufacturer</span>
                     <ArrowRight className="w-3 h-3" />
                     <span>Exporter</span>
                     <ArrowRight className="w-3 h-3" />
                     <span>Wholesaler</span>
-                    <ArrowRight className="w-3 h-3" />
+                    <div className="basis-full md:hidden" />
+                    <span className="hidden md:inline">
+                      <ArrowRight className="w-3 h-3" />
+                    </span>
                     <span>Retailer</span>
+                    <ArrowRight className="w-3 h-3" />
+                    <span>You</span>
                   </div>
-                  <div className="w-full bg-stone-200 h-1 rounded-full overflow-hidden">
+                  <div className="w-full bg-stone-200 h-1 rounded-full overflow-hidden mt-3">
                     <div className="bg-stone-400 w-full h-full" />
                   </div>
                   <div className="mt-2 text-right text-xs text-stone-500 font-serif italic">
-                    ~ 1000% Markup
+                    Each step adds extra cost
                   </div>
                 </div>
 
@@ -201,13 +196,13 @@ export default function AboutPage() {
                     <span>Mine</span>
                     <ArrowRight className="w-3 h-3 text-[#c2a35d]" />
                     <span className="bg-[#021a14] text-[#c2a35d] px-2 py-1">
-                      LA.JOHRI Gemmologist
+                      LA.JOHRI
                     </span>
                     <ArrowRight className="w-3 h-3 text-[#c2a35d]" />
                     <span>You</span>
                   </div>
                   <div className="w-full bg-[#021a14]/10 h-1 rounded-full overflow-hidden flex">
-                    <div className="bg-[#c2a35d] w-[25%] h-full" />
+                    <div className="bg-[#c2a35d] w-[35%] h-full" />
                   </div>
                   <div className="mt-2 text-left text-xs text-[#c2a35d] font-serif italic">
                     Fair Value. Uncompromised.
@@ -231,9 +226,9 @@ export default function AboutPage() {
               <span className="text-stone-500 not-italic">Forged.</span>
             </h2>
             <p className="max-w-lg mx-auto text-stone-500 text-xs tracking-widest leading-loose uppercase">
-              We reject mass-production casting. Each piece is hand-fabricated
-              from solid 18K gold, ensuring heirloom density and structural
-              longevity.
+              We reject mass production and casting. Each piece is
+              hand-fabricated from solid gold in a range of karat weights to
+              ensure heirloom quality and longevity
             </p>
           </div>
 
@@ -241,36 +236,12 @@ export default function AboutPage() {
             {/* Decorative Line */}
             <div className="hidden md:block absolute top-12 left-0 w-full h-px bg-stone-800 z-0" />
 
-            {/* Craft Step 1 */}
+            {/* Craft Step 1: THE FORGE */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="relative z-10 bg-[#0c0c0c] pt-8"
-            >
-              <div className="w-16 h-16 bg-[#1a1a1a] flex items-center justify-center border border-stone-800 mb-8 mx-auto rounded-full group hover:border-[#c2a35d] transition-colors">
-                <PenTool
-                  className="text-stone-400 w-6 h-6 group-hover:text-[#c2a35d]"
-                  strokeWidth={1}
-                />
-              </div>
-              <h3 className="text-xl font-serif text-center mb-4">
-                The Gouache
-              </h3>
-              <p className="text-stone-500 text-sm text-center font-light leading-relaxed px-4">
-                Every commission begins as a hand-painted gouache illustration,
-                mapping the light performance of your specific gem before metal
-                ever touches fire.
-              </p>
-            </motion.div>
-
-            {/* Craft Step 2 */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
               className="relative z-10 bg-[#0c0c0c] pt-8"
             >
               <div className="w-16 h-16 bg-[#1a1a1a] flex items-center justify-center border border-stone-800 mb-8 mx-auto rounded-full group hover:border-[#c2a35d] transition-colors">
@@ -281,13 +252,37 @@ export default function AboutPage() {
               </div>
               <h3 className="text-xl font-serif text-center mb-4">The Forge</h3>
               <p className="text-stone-500 text-sm text-center font-light leading-relaxed px-4">
-                We use traditional alloying methods to create our signature "Old
-                World" 18k Gold—a richer, deeper yellow that complements
-                high-saturation gemstones.
+                In our forge, we handcraft each piece using time-honored
+                techniques, ensuring every creation is infused with quality,
+                character, and a sense of tradition.
               </p>
             </motion.div>
 
-            {/* Craft Step 3 */}
+            {/* Craft Step 2: SIGNATURE TECHNIQUES */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="relative z-10 bg-[#0c0c0c] pt-8"
+            >
+              <div className="w-16 h-16 bg-[#1a1a1a] flex items-center justify-center border border-stone-800 mb-8 mx-auto rounded-full group hover:border-[#c2a35d] transition-colors">
+                <PenTool
+                  className="text-stone-400 w-6 h-6 group-hover:text-[#c2a35d]"
+                  strokeWidth={1}
+                />
+              </div>
+              <h3 className="text-xl font-serif text-center mb-4">
+                Our Signature Techniques
+              </h3>
+              <p className="text-stone-500 text-sm text-center font-light leading-relaxed px-4">
+                We employ a range of signature techniques that focus on
+                meticulous handcraftsmanship, bringing a personal touch and
+                unique artistry to every piece we create.
+              </p>
+            </motion.div>
+
+            {/* Craft Step 3: BUILT TO ENDURE */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -302,12 +297,12 @@ export default function AboutPage() {
                 />
               </div>
               <h3 className="text-xl font-serif text-center mb-4">
-                The Setting
+                Built to Endure
               </h3>
               <p className="text-stone-500 text-sm text-center font-light leading-relaxed px-4">
-                Micro-pave and bezel settings are done under 40x magnification.
-                We do not use glue or shortcuts; physics and precision hold your
-                legacy together.
+                Each piece is crafted to stand the test of time, designed with
+                durability and longevity in mind, so it can be treasured for
+                generations to come.
               </p>
             </motion.div>
           </div>
@@ -352,7 +347,7 @@ export default function AboutPage() {
                   Global Sourcing
                 </h6>
                 <p className="text-[9px] text-emerald-100/30 leading-relaxed uppercase">
-                  Direct from ethical mines in Zambia & Burma.
+                  Direct from ethical mines globally.
                 </p>
               </div>
               <div className="space-y-2">
