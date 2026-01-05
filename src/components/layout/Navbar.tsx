@@ -71,9 +71,12 @@ export const Navbar = () => {
         </div>
 
         {/* Right Side: Concierge & CTA */}
-        <div className="hidden lg:flex items-center gap-4 md:gap-12">
-          <div className="hidden xl:block text-[9px] uppercase tracking-[0.4em] text-emerald-100/40">
-            Private Concierge Open
+        <Link
+          href={"/calculator"}
+          className="hidden lg:flex items-center gap-4 md:gap-12"
+        >
+          <div className="hidden xl:block text-[10px] uppercase tracking-[0.4em] text-emerald-100">
+            Gemstone Calculator
           </div>
           <Link
             href="/enquire"
@@ -81,7 +84,7 @@ export const Navbar = () => {
           >
             Enquire
           </Link>
-        </div>
+        </Link>
       </nav>
 
       {/* Mobile Menu Overlay */}
