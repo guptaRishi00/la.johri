@@ -36,162 +36,6 @@ type GemResult = {
 };
 
 // --- Helper Logic (The "Brain") ---
-const calculateGemstone = (dob: string, weightKg: number): GemResult => {
-  const date = new Date(dob);
-  const month = date.getMonth() + 1; // 1-12
-  const day = date.getDate();
-
-  // Simplified Zodiac Lookup (Western Sun Sign approximation)
-  let sign = "";
-  if ((month == 3 && day >= 21) || (month == 4 && day <= 19)) sign = "Aries";
-  else if ((month == 4 && day >= 20) || (month == 5 && day <= 20))
-    sign = "Taurus";
-  else if ((month == 5 && day >= 21) || (month == 6 && day <= 20))
-    sign = "Gemini";
-  else if ((month == 6 && day >= 21) || (month == 7 && day <= 22))
-    sign = "Cancer";
-  else if ((month == 7 && day >= 23) || (month == 8 && day <= 22)) sign = "Leo";
-  else if ((month == 8 && day >= 23) || (month == 9 && day <= 22))
-    sign = "Virgo";
-  else if ((month == 9 && day >= 23) || (month == 10 && day <= 22))
-    sign = "Libra";
-  else if ((month == 10 && day >= 23) || (month == 11 && day <= 21))
-    sign = "Scorpio";
-  else if ((month == 11 && day >= 22) || (month == 12 && day <= 21))
-    sign = "Sagittarius";
-  else if ((month == 12 && day >= 22) || (month == 1 && day <= 19))
-    sign = "Capricorn";
-  else if ((month == 1 && day >= 20) || (month == 2 && day <= 18))
-    sign = "Aquarius";
-  else sign = "Pisces";
-
-  const idealRatti = (weightKg / 12).toFixed(2);
-
-  const gems: Record<string, GemResult> = {
-    Aries: {
-      stoneName: "Red Coral",
-      sanskritName: "Moonga",
-      weightRatti: Number(idealRatti),
-      metal: "Copper or Gold",
-      finger: "Ring Finger",
-      day: "Tuesday",
-      mantra: "Om Ang Angarkaya Namaha",
-      description: "Boosts courage, energy, and leadership qualities.",
-    },
-    Taurus: {
-      stoneName: "Diamond",
-      sanskritName: "Heera",
-      weightRatti: Number(idealRatti),
-      metal: "Gold or Platinum",
-      finger: "Middle Finger",
-      day: "Friday",
-      mantra: "Om Shum Shukraya Namaha",
-      description: "Enhances luxury, love, and artistic abilities.",
-    },
-    Gemini: {
-      stoneName: "Emerald",
-      sanskritName: "Panna",
-      weightRatti: Number(idealRatti),
-      metal: "Gold",
-      finger: "Little Finger",
-      day: "Wednesday",
-      mantra: "Om Bum Budhaya Namaha",
-      description: "Improves communication, intellect, and business.",
-    },
-    Cancer: {
-      stoneName: "Pearl",
-      sanskritName: "Moti",
-      weightRatti: Number(idealRatti),
-      metal: "Silver",
-      finger: "Little Finger",
-      day: "Monday",
-      mantra: "Om Som Somaya Namaha",
-      description: "Brings emotional balance and mental peace.",
-    },
-    Leo: {
-      stoneName: "Ruby",
-      sanskritName: "Manik",
-      weightRatti: Number(idealRatti),
-      metal: "Gold or Copper",
-      finger: "Ring Finger",
-      day: "Sunday",
-      mantra: "Om Hrim Suryaya Namaha",
-      description: "Increases authority, confidence, and health.",
-    },
-    Virgo: {
-      stoneName: "Emerald",
-      sanskritName: "Panna",
-      weightRatti: Number(idealRatti),
-      metal: "Gold",
-      finger: "Little Finger",
-      day: "Wednesday",
-      mantra: "Om Bum Budhaya Namaha",
-      description: "Sharpen intellect and analytical skills.",
-    },
-    Libra: {
-      stoneName: "Diamond",
-      sanskritName: "Heera",
-      weightRatti: Number(idealRatti),
-      metal: "Gold/Platinum",
-      finger: "Middle Finger",
-      day: "Friday",
-      mantra: "Om Shum Shukraya Namaha",
-      description: "Attracts fame, prosperity, and harmony.",
-    },
-    Scorpio: {
-      stoneName: "Red Coral",
-      sanskritName: "Moonga",
-      weightRatti: Number(idealRatti),
-      metal: "Copper or Gold",
-      finger: "Ring Finger",
-      day: "Tuesday",
-      mantra: "Om Ang Angarkaya Namaha",
-      description: "Provides physical strength and protection.",
-    },
-    Sagittarius: {
-      stoneName: "Yellow Sapphire",
-      sanskritName: "Pukhraj",
-      weightRatti: Number(idealRatti),
-      metal: "Gold",
-      finger: "Index Finger",
-      day: "Thursday",
-      mantra: "Om Brim Brihaspataye Namaha",
-      description: "Brings wisdom, fortune, and spirituality.",
-    },
-    Capricorn: {
-      stoneName: "Blue Sapphire",
-      sanskritName: "Neelam",
-      weightRatti: Number(idealRatti),
-      metal: "Silver/Iron",
-      finger: "Middle Finger",
-      day: "Saturday",
-      mantra: "Om Sham Shanaishcharaya Namaha",
-      description: "Offers protection, wealth, and focus.",
-    },
-    Aquarius: {
-      stoneName: "Blue Sapphire",
-      sanskritName: "Neelam",
-      weightRatti: Number(idealRatti),
-      metal: "Silver/Gold",
-      finger: "Middle Finger",
-      day: "Saturday",
-      mantra: "Om Sham Shanaishcharaya Namaha",
-      description: "Enhances intuition and removes obstacles.",
-    },
-    Pisces: {
-      stoneName: "Yellow Sapphire",
-      sanskritName: "Pukhraj",
-      weightRatti: Number(idealRatti),
-      metal: "Gold",
-      finger: "Index Finger",
-      day: "Thursday",
-      mantra: "Om Brim Brihaspataye Namaha",
-      description: "Grant spiritual growth and prosperity.",
-    },
-  };
-
-  return gems[sign] || gems["Aries"];
-};
 
 export default function GemstoneCalculator() {
   const [step, setStep] = useState(1);
@@ -213,19 +57,34 @@ export default function GemstoneCalculator() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
 
-    setTimeout(() => {
-      const gemResult = calculateGemstone(
-        formData.dob,
-        Number(formData.weight)
-      );
-      setResult(gemResult);
-      setLoading(false);
+    try {
+      const response = await fetch("/api/consult-gemstone", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("The stars remained silent.");
+      }
+
+      const data = await response.json();
+      setResult(data); // The API returns the exact structure matching GemResult
       setStep(2);
-    }, 2000);
+    } catch (error) {
+      console.error(error);
+      alert(
+        "We could not complete the astrological calculation. Please try again."
+      );
+    } finally {
+      setLoading(false);
+    }
   };
 
   const reset = () => {
