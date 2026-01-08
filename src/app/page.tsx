@@ -39,7 +39,10 @@ export default function LandingPage() {
         <Hero />
         <Craftsmanship />
         <TheSlowCraft /> {/* Focus on the time/patience factor */}
-        <ScientificRigor /> {/* Focus on the diamond/gem science */}
+        <ScientificRigor />
+        <Provenance />
+        <TheForge />
+        {/* Focus on the diamond/gem science */}
         <EmeraldVault />
         <AncestryLedger /> {/* Focus on the provenance guarantee */}
         <Manifesto />
