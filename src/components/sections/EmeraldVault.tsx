@@ -79,7 +79,7 @@ export const EmeraldVault = () => {
                   {item.title}
                 </h4>
                 {/* Animated Underline */}
-                <div className="w-8 md:w-0 group-hover:w-full h-px bg-[#c2a35d] transition-all duration-700" />
+                <div className="w-8 md:w-0 group-hover:w-full h-px bg-[#c0c0c0] transition-all duration-700" />
               </div>
             </motion.div>
           ))}

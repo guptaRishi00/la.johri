@@ -101,7 +101,7 @@ export default function GemstoneCalculator() {
   };
 
   return (
-    <main className="bg-[#021a14] min-h-screen pt-32 selection:bg-[#c2a35d] selection:text-[#021a14]">
+    <main className="bg-[#021a14] min-h-screen pt-32 selection:bg-[#c0c0c0] selection:text-[#021a14]">
       <section className="px-6 md:px-12 lg:px-24 pb-24">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-24 items-start">
           {/* Left Side: Context & Branding */}
@@ -113,8 +113,8 @@ export default function GemstoneCalculator() {
           >
             <div>
               <div className="flex items-center gap-3 mb-8">
-                <Sparkles className="text-[#c2a35d] w-4 h-4" />
-                <span className="text-[#c2a35d] uppercase tracking-[0.8em] text-[10px] block font-medium">
+                <Sparkles className="text-[#c0c0c0] w-4 h-4" />
+                <span className="text-[#c0c0c0] uppercase tracking-[0.8em] text-[10px] block font-medium">
                   Vedic Astrological Science
                 </span>
               </div>
@@ -144,7 +144,7 @@ export default function GemstoneCalculator() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.3 }}
-            className="bg-emerald-950/20 p-8 md:p-16 border border-[#c2a35d]/10 backdrop-blur-sm order-1 lg:order-2"
+            className="bg-emerald-950/20 p-8 md:p-16 border border-[#c0c0c0]/10 backdrop-blur-sm order-1 lg:order-2"
           >
             <AnimatePresence mode="wait">
               {/* --- LOADING STATE --- */}
@@ -156,8 +156,8 @@ export default function GemstoneCalculator() {
                   exit={{ opacity: 0 }}
                   className="flex flex-col items-center justify-center min-h-[400px] space-y-6"
                 >
-                  <div className="w-16 h-16 border-t-2 border-b-2 border-[#c2a35d] rounded-full animate-spin"></div>
-                  <p className="text-[10px] uppercase tracking-[0.4em] text-[#c2a35d] animate-pulse">
+                  <div className="w-16 h-16 border-t-2 border-b-2 border-[#c0c0c0] rounded-full animate-spin"></div>
+                  <p className="text-[10px] uppercase tracking-[0.4em] text-[#c0c0c0] animate-pulse">
                     Consulting the Ephemeris...
                   </p>
                 </motion.div>
@@ -179,7 +179,7 @@ export default function GemstoneCalculator() {
                     </label>
                     <div className="relative">
                       <User
-                        className="absolute right-0 top-4 text-[#c2a35d]/40 w-4 h-4"
+                        className="absolute right-0 top-4 text-[#c0c0c0]/40 w-4 h-4"
                         strokeWidth={1}
                       />
                       <input
@@ -187,7 +187,7 @@ export default function GemstoneCalculator() {
                         name="name"
                         onChange={handleChange}
                         value={formData.name}
-                        className="w-full bg-transparent border-b border-[#c2a35d]/20 py-4 focus:border-[#c2a35d] outline-none text-stone-100 font-serif text-lg transition-colors placeholder:text-emerald-100/10"
+                        className="w-full bg-transparent border-b border-[#c0c0c0]/20 py-4 focus:border-[#c0c0c0] outline-none text-stone-100 font-serif text-lg transition-colors placeholder:text-emerald-100/10"
                         placeholder="The name of the Sovereign"
                       />
                     </div>
@@ -200,7 +200,7 @@ export default function GemstoneCalculator() {
                       </label>
                       <div className="relative">
                         <Calendar
-                          className="absolute right-0 top-4 text-[#c2a35d]/40 w-4 h-4"
+                          className="absolute right-0 top-4 text-[#c0c0c0]/40 w-4 h-4"
                           strokeWidth={1}
                         />
                         <input
@@ -209,7 +209,7 @@ export default function GemstoneCalculator() {
                           name="dob"
                           onChange={handleChange}
                           value={formData.dob}
-                          className="w-full bg-transparent border-b border-[#c2a35d]/20 py-4 focus:border-[#c2a35d] outline-none text-stone-100 font-light transition-colors text-sm uppercase tracking-widest [color-scheme:dark]"
+                          className="w-full bg-transparent border-b border-[#c0c0c0]/20 py-4 focus:border-[#c0c0c0] outline-none text-stone-100 font-light transition-colors text-sm uppercase tracking-widest [color-scheme:dark]"
                         />
                       </div>
                     </div>
@@ -219,7 +219,7 @@ export default function GemstoneCalculator() {
                       </label>
                       <div className="relative">
                         <Clock
-                          className="absolute right-0 top-4 text-[#c2a35d]/40 w-4 h-4"
+                          className="absolute right-0 top-4 text-[#c0c0c0]/40 w-4 h-4"
                           strokeWidth={1}
                         />
                         <input
@@ -228,7 +228,7 @@ export default function GemstoneCalculator() {
                           name="time"
                           onChange={handleChange}
                           value={formData.time}
-                          className="w-full bg-transparent border-b border-[#c2a35d]/20 py-4 focus:border-[#c2a35d] outline-none text-stone-100 font-light transition-colors text-sm uppercase tracking-widest [color-scheme:dark]"
+                          className="w-full bg-transparent border-b border-[#c0c0c0]/20 py-4 focus:border-[#c0c0c0] outline-none text-stone-100 font-light transition-colors text-sm uppercase tracking-widest [color-scheme:dark]"
                         />
                       </div>
                     </div>
@@ -241,7 +241,7 @@ export default function GemstoneCalculator() {
                       </label>
                       <div className="relative">
                         <MapPin
-                          className="absolute right-0 top-4 text-[#c2a35d]/40 w-4 h-4"
+                          className="absolute right-0 top-4 text-[#c0c0c0]/40 w-4 h-4"
                           strokeWidth={1}
                         />
                         <input
@@ -249,7 +249,7 @@ export default function GemstoneCalculator() {
                           name="place"
                           onChange={handleChange}
                           value={formData.place}
-                          className="w-full bg-transparent border-b border-[#c2a35d]/20 py-4 focus:border-[#c2a35d] outline-none text-stone-100 font-serif transition-colors"
+                          className="w-full bg-transparent border-b border-[#c0c0c0]/20 py-4 focus:border-[#c0c0c0] outline-none text-stone-100 font-serif transition-colors"
                           placeholder="City, Country"
                         />
                       </div>
@@ -260,7 +260,7 @@ export default function GemstoneCalculator() {
                       </label>
                       <div className="relative">
                         <Scale
-                          className="absolute right-0 top-4 text-[#c2a35d]/40 w-4 h-4"
+                          className="absolute right-0 top-4 text-[#c0c0c0]/40 w-4 h-4"
                           strokeWidth={1}
                         />
                         <input
@@ -269,7 +269,7 @@ export default function GemstoneCalculator() {
                           name="weight"
                           onChange={handleChange}
                           value={formData.weight}
-                          className="w-full bg-transparent border-b border-[#c2a35d]/20 py-4 focus:border-[#c2a35d] outline-none text-stone-100 font-serif transition-colors"
+                          className="w-full bg-transparent border-b border-[#c0c0c0]/20 py-4 focus:border-[#c0c0c0] outline-none text-stone-100 font-serif transition-colors"
                           placeholder="00"
                         />
                       </div>
@@ -277,7 +277,7 @@ export default function GemstoneCalculator() {
                   </div>
 
                   <div className="pt-8">
-                    <button className="w-full py-5 bg-[#c2a35d] text-[#021a14] text-[10px] uppercase tracking-[0.4em] hover:bg-stone-100 transition-all duration-700 font-medium flex items-center justify-center gap-4">
+                    <button className="w-full py-5 bg-[#c0c0c0] text-[#021a14] text-[10px] uppercase tracking-[0.4em] hover:bg-stone-100 transition-all duration-700 font-medium flex items-center justify-center gap-4">
                       <Gem size={14} /> Calculate Gemstone
                     </button>
                   </div>
@@ -292,8 +292,8 @@ export default function GemstoneCalculator() {
                   animate={{ opacity: 1, scale: 1 }}
                   className="flex flex-col h-full"
                 >
-                  <div className="text-center mb-12 border-b border-[#c2a35d]/10 pb-12">
-                    <span className="text-[#c2a35d] text-[9px] uppercase tracking-[0.6em] block mb-4">
+                  <div className="text-center mb-12 border-b border-[#c0c0c0]/10 pb-12">
+                    <span className="text-[#c0c0c0] text-[9px] uppercase tracking-[0.6em] block mb-4">
                       Your Divine Prescription
                     </span>
                     <h2 className="text-5xl font-serif text-stone-100 italic font-light mb-2">
@@ -309,7 +309,7 @@ export default function GemstoneCalculator() {
                       <p className="text-[9px] uppercase tracking-[0.4em] text-stone-500 mb-2">
                         Ideal Weight
                       </p>
-                      <p className="text-xl font-serif text-[#c2a35d]">
+                      <p className="text-xl font-serif text-[#c0c0c0]">
                         {result.weightRatti} Ratti
                       </p>
                     </div>
@@ -339,9 +339,9 @@ export default function GemstoneCalculator() {
                     </div>
                   </div>
 
-                  <div className="bg-[#021a14] p-8 border border-[#c2a35d]/20 relative overflow-hidden mb-8">
+                  <div className="bg-[#021a14] p-8 border border-[#c0c0c0]/20 relative overflow-hidden mb-8">
                     <div className="relative z-10 text-center">
-                      <p className="text-[9px] text-[#c2a35d] uppercase tracking-[0.4em] mb-4">
+                      <p className="text-[9px] text-[#c0c0c0] uppercase tracking-[0.4em] mb-4">
                         Empowerment Mantra
                       </p>
                       <p className="text-xl md:text-2xl font-serif italic text-stone-100 leading-relaxed">
@@ -355,7 +355,7 @@ export default function GemstoneCalculator() {
                   <div className="flex flex-col gap-4 mt-auto">
                     <button
                       onClick={reset}
-                      className="text-[9px] uppercase tracking-[0.2em] text-emerald-100/30 hover:text-[#c2a35d] transition-colors"
+                      className="text-[9px] uppercase tracking-[0.2em] text-emerald-100/30 hover:text-[#c0c0c0] transition-colors"
                     >
                       Calculate for another
                     </button>

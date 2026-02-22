@@ -50,10 +50,10 @@ export const PrivateConcierge = () => {
           </p>
 
           <button className="flex items-center gap-4 text-[10px] md:text-[11px] uppercase tracking-[0.3em] md:tracking-[0.5em] text-[#021a14] group">
-            <span className="border-b border-[#021a14]/20 pb-2 group-hover:border-[#c2a35d] transition-all duration-500 whitespace-nowrap">
+            <span className="border-b border-[#021a14]/20 pb-2 group-hover:border-[#c0c0c0] transition-all duration-500 whitespace-nowrap">
               Book Private Viewing
             </span>
-            <div className="p-2 border border-[#021a14]/10 rounded-full group-hover:border-[#c2a35d] group-hover:bg-[#c2a35d] group-hover:text-white transition-all duration-500">
+            <div className="p-2 border border-[#021a14]/10 rounded-full group-hover:border-[#c0c0c0] group-hover:bg-[#c0c0c0] group-hover:text-white transition-all duration-500">
               <ArrowUpRight
                 size={14}
                 className="transition-transform duration-500 group-hover:rotate-45"

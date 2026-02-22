@@ -29,10 +29,10 @@ export const Hero = () => {
           transition={{ duration: 1.5 }}
           className="mb-8 md:mb-16 lg:mb-10"
         >
-          <span className="text-[#c2a35d] font-light text-[9px] md:text-[11px] uppercase tracking-[0.6em] md:tracking-[1em] mb-4 md:mb-6 block">
+          <span className="text-[#c0c0c0] font-light text-[9px] md:text-[11px] uppercase tracking-[0.6em] md:tracking-[1em] mb-4 md:mb-6 block">
             Antiquity Preserved
           </span>
-          <div className="w-12 md:w-16 h-px bg-[#c2a35d]/30 mx-auto" />
+          <div className="w-12 md:w-16 h-px bg-[#c0c0c0]/30 mx-auto" />
         </motion.div>
 
         {/* 2. The Main Heading - Responsive fluid sizing */}
@@ -44,7 +44,7 @@ export const Hero = () => {
             className="text-5xl sm:text-6xl md:text-[9vw] lg:text-[10vw] font-serif text-stone-100 leading-[1.2] md:leading-[1.1] font-light"
           >
             A Sacred <br className="md:hidden" />
-            <span className="italic text-[#c2a35d]/80"> Presence</span>
+            <span className="italic text-[#c0c0c0]/80"> Presence</span>
           </motion.h2>
         </div>
 
@@ -67,8 +67,8 @@ export const Hero = () => {
           style={{ opacity }}
           className="lg:hidden bottom-8 md:bottom-12 left-1/2 mt-10 flex flex-col items-center"
         >
-          <div className="w-px h-12 md:h-20 bg-linear-to-b from-[#c2a35d] to-transparent" />
-          <span className="text-[7px] md:text-[8px] uppercase tracking-[0.4em] md:tracking-[0.5em] text-[#c2a35d] mt-4 md:mt-6 whitespace-nowrap">
+          <div className="w-px h-12 md:h-20 bg-linear-to-b from-[#c0c0c0] to-transparent" />
+          <span className="text-[7px] md:text-[8px] uppercase tracking-[0.4em] md:tracking-[0.5em] text-[#c0c0c0] mt-4 md:mt-6 whitespace-nowrap">
             Begin Journey
           </span>
         </motion.div>

@@ -25,7 +25,7 @@ export const ScientificRigor = () => {
             className="p-8 border border-emerald-900/5 bg-white"
           >
             <Microscope
-              className="text-[#c2a35d] w-6 h-6 mb-6"
+              className="text-[#c0c0c0] w-6 h-6 mb-6"
               strokeWidth={1}
             />
             <h4 className="text-xl font-serif text-[#021a14] mb-4">
@@ -45,7 +45,7 @@ export const ScientificRigor = () => {
             transition={{ delay: 0.2 }}
             className="p-8 border border-emerald-900/5 bg-white"
           >
-            <Zap className="text-[#c2a35d] w-6 h-6 mb-6" strokeWidth={1} />
+            <Zap className="text-[#c0c0c0] w-6 h-6 mb-6" strokeWidth={1} />
             <h4 className="text-xl font-serif text-[#021a14] mb-4">
               Type IIa Purity
             </h4>
@@ -65,7 +65,7 @@ export const ScientificRigor = () => {
             className="p-8 border border-emerald-900/5 bg-white"
           >
             <ShieldCheck
-              className="text-[#c2a35d] w-6 h-6 mb-6"
+              className="text-[#c0c0c0] w-6 h-6 mb-6"
               strokeWidth={1}
             />
             <h4 className="text-xl font-serif text-[#021a14] mb-4">

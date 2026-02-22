@@ -12,7 +12,7 @@ export default function AtelierPage() {
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="text-[#c2a35d] uppercase tracking-[0.8em] text-[10px] mb-8 block"
+            className="text-[#c0c0c0] uppercase tracking-[0.8em] text-[10px] mb-8 block"
           >
             The Birthplace of Sovereignty
           </motion.span>
@@ -49,7 +49,7 @@ export default function AtelierPage() {
             </h2>
             <div className="space-y-8">
               <div className="border-l border-[#021a14]/10 pl-8 py-4">
-                <h4 className="text-[#c2a35d] uppercase tracking-widest text-xs mb-2">
+                <h4 className="text-[#c0c0c0] uppercase tracking-widest text-xs mb-2">
                   I. The Selection
                 </h4>
                 <p className="text-[#021a14]/70 text-sm font-light leading-relaxed">
@@ -58,7 +58,7 @@ export default function AtelierPage() {
                 </p>
               </div>
               <div className="border-l border-[#021a14]/10 pl-8 py-4">
-                <h4 className="text-[#c2a35d] uppercase tracking-widest text-xs mb-2">
+                <h4 className="text-[#c0c0c0] uppercase tracking-widest text-xs mb-2">
                   II. The Chasing
                 </h4>
                 <p className="text-[#021a14]/70 text-sm font-light leading-relaxed">
@@ -89,7 +89,7 @@ export default function AtelierPage() {
         >
           <h3 className="text-3xl md:text-5xl font-serif text-stone-100 italic font-light leading-relaxed">
             "To wear La.Johri is to carry the weight of a{" "}
-            <span className="text-[#c2a35d]">thousand-year-old</span>{" "}
+            <span className="text-[#c0c0c0]">thousand-year-old</span>{" "}
             conversation between man and mineral."
           </h3>
         </motion.div>

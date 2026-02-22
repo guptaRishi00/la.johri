@@ -32,15 +32,15 @@ export const Manifesto = () => {
       >
         {/* Compass Icon - Scaled for screens */}
         <Compass
-          className="text-[#c2a35d] mx-auto mb-10 md:mb-16 w-8 h-8 md:w-12 md:h-12"
+          className="text-[#c0c0c0] mx-auto mb-10 md:mb-16 w-8 h-8 md:w-12 md:h-12"
           strokeWidth={0.5}
         />
 
         {/* The Quote - Fluid Typography */}
         <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-serif text-stone-100 italic leading-relaxed md:leading-snug font-light">
-          "Jewellery is the <span className="text-[#c2a35d]">silent pulse</span>{" "}
+          "Jewellery is the <span className="text-[#c0c0c0]">silent pulse</span>{" "}
           of a lineage. At la.johri, we don't curate items; we curate the{" "}
-          <span className="text-[#c2a35d]">spirit of antiquity</span> itself."
+          <span className="text-[#c0c0c0]">spirit of antiquity</span> itself."
         </h2>
 
         {/* Footer Label - Tracking reduced for mobile readability */}

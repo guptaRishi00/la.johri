@@ -5,7 +5,7 @@ import { BRAND_IMAGES } from "@/constants/images";
 
 export default function EnquirePage() {
   return (
-    <main className="bg-[#fdfcf9] min-h-screen pt-32 selection:bg-[#c2a35d] selection:text-[#021a14]">
+    <main className="bg-[#fdfcf9] min-h-screen pt-32 selection:bg-[#c0c0c0] selection:text-[#021a14]">
       <section className="px-6 md:px-12 lg:px-24 pb-24">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-24 items-start">
           {/* Left Side: Editorial & Context */}
@@ -52,7 +52,7 @@ export default function EnquirePage() {
                 </label>
                 <input
                   type="text"
-                  className="w-full bg-transparent border-b border-stone-200 py-4 focus:border-[#c2a35d] outline-none text-stone-800 font-light transition-colors"
+                  className="w-full bg-transparent border-b border-stone-200 py-4 focus:border-[#c0c0c0] outline-none text-stone-800 font-light transition-colors"
                   placeholder="The name of the Sovereign"
                 />
               </div>
@@ -61,7 +61,7 @@ export default function EnquirePage() {
                 <label className="text-[9px] uppercase tracking-[0.4em] text-stone-400">
                   Nature of Inquiry
                 </label>
-                <select className="w-full bg-transparent border-b border-stone-200 py-4 focus:border-[#c2a35d] outline-none text-stone-800 font-light appearance-none">
+                <select className="w-full bg-transparent border-b border-stone-200 py-4 focus:border-[#c0c0c0] outline-none text-stone-800 font-light appearance-none">
                   <option>Bespoke Commission</option>
                   <option>Private Salon Appointment</option>
                   <option>Vault Acquisition</option>
@@ -75,7 +75,7 @@ export default function EnquirePage() {
                 </label>
                 <input
                   type="email"
-                  className="w-full bg-transparent border-b border-stone-200 py-4 focus:border-[#c2a35d] outline-none text-stone-800 font-light transition-colors"
+                  className="w-full bg-transparent border-b border-stone-200 py-4 focus:border-[#c0c0c0] outline-none text-stone-800 font-light transition-colors"
                   placeholder="email@domain.com"
                 />
               </div>
@@ -86,12 +86,12 @@ export default function EnquirePage() {
                 </label>
                 <textarea
                   rows={4}
-                  className="w-full bg-transparent border-b border-stone-200 py-4 focus:border-[#c2a35d] outline-none text-stone-800 font-light transition-colors resize-none"
+                  className="w-full bg-transparent border-b border-stone-200 py-4 focus:border-[#c0c0c0] outline-none text-stone-800 font-light transition-colors resize-none"
                   placeholder="Share your intent..."
                 />
               </div>
 
-              <button className="w-full py-6 bg-[#021a14] text-[#c2a35d] text-[10px] uppercase tracking-[0.6em] hover:bg-[#c2a35d] hover:text-[#021a14] transition-all duration-700 font-medium">
+              <button className="w-full py-6 bg-[#021a14] text-[#c0c0c0] text-[10px] uppercase tracking-[0.6em] hover:bg-[#c0c0c0] hover:text-[#021a14] transition-all duration-700 font-medium">
                 Request Engagement
               </button>
             </form>

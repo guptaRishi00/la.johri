@@ -12,7 +12,7 @@ export const AncestryLedger = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
         >
-          <span className="text-[#c2a35d] uppercase tracking-[0.8em] text-[10px] block mb-8">
+          <span className="text-[#c0c0c0] uppercase tracking-[0.8em] text-[10px] block mb-8">
             Legacy Preservation
           </span>
           <h2 className="text-5xl md:text-7xl font-serif text-stone-100 font-light leading-tight mb-8">
@@ -27,7 +27,7 @@ export const AncestryLedger = () => {
           <div className="space-y-8">
             <div className="flex gap-6 items-start">
               <History
-                className="text-[#c2a35d] w-5 h-5 mt-1"
+                className="text-[#c0c0c0] w-5 h-5 mt-1"
                 strokeWidth={1}
               />
               <div>
@@ -41,7 +41,7 @@ export const AncestryLedger = () => {
               </div>
             </div>
             <div className="flex gap-6 items-start">
-              <Lock className="text-[#c2a35d] w-5 h-5 mt-1" strokeWidth={1} />
+              <Lock className="text-[#c0c0c0] w-5 h-5 mt-1" strokeWidth={1} />
               <div>
                 <h5 className="text-stone-100 font-serif text-lg mb-1">
                   Certified Provenance
@@ -57,7 +57,7 @@ export const AncestryLedger = () => {
 
         <div className="relative aspect-square">
           {/* Decorative frame for an "Ancient Ledger" feel */}
-          <div className="absolute inset-0 border border-[#c2a35d]/20 m-8" />
+          <div className="absolute inset-0 border border-[#c0c0c0]/20 m-8" />
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -65,11 +65,11 @@ export const AncestryLedger = () => {
             className="w-full h-full bg-emerald-950/20 flex items-center justify-center p-12"
           >
             <BookOpen
-              className="text-[#c2a35d]/10 w-64 h-64 absolute"
+              className="text-[#c0c0c0]/10 w-64 h-64 absolute"
               strokeWidth={0.5}
             />
             <div className="text-center z-10">
-              <span className="text-[#c2a35d] text-[10px] tracking-[1em] uppercase mb-4 block">
+              <span className="text-[#c0c0c0] text-[10px] tracking-[1em] uppercase mb-4 block">
                 Archive Entry
               </span>
               <p className="text-stone-400 font-serif italic text-2xl">

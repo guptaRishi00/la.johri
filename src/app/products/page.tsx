@@ -80,16 +80,16 @@ export default function ProductsPage() {
       : products.filter((p) => p.category === activeFilter);
 
   return (
-    <main className="bg-[#021a14] min-h-screen pt-32 selection:bg-[#c2a35d] selection:text-[#021a14]">
+    <main className="bg-[#021a14] min-h-screen pt-32 selection:bg-[#c0c0c0] selection:text-[#021a14]">
       {/* HEADER SECTION */}
       <section className="px-6 md:px-12 lg:px-24 mb-20">
-        <div className="max-w-7xl mx-auto border-b border-[#c2a35d]/10 pb-16">
+        <div className="max-w-7xl mx-auto border-b border-[#c0c0c0]/10 pb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5 }}
           >
-            <span className="text-[#c2a35d] uppercase tracking-[1em] text-[10px] mb-8 block">
+            <span className="text-[#c0c0c0] uppercase tracking-[1em] text-[10px] mb-8 block">
               The Archive of Rarity
             </span>
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif text-stone-100 font-light italic leading-none mb-12">
@@ -105,7 +105,7 @@ export default function ProductsPage() {
                 onClick={() => setActiveFilter(cat.id)}
                 className={`text-[10px] uppercase tracking-[0.4em] transition-all duration-500 pb-2 border-b ${
                   activeFilter === cat.id
-                    ? "text-[#c2a35d] border-[#c2a35d]"
+                    ? "text-[#c0c0c0] border-[#c0c0c0]"
                     : "text-emerald-100/30 border-transparent hover:text-emerald-100"
                 }`}
               >
@@ -143,7 +143,7 @@ export default function ProductsPage() {
                       className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-transform duration-[2s] scale-110 group-hover:scale-100"
                     />
                     <div className="absolute bottom-6 left-6 z-20 flex flex-col gap-2">
-                      <span className="text-[#c2a35d] text-[8px] tracking-[0.3em] uppercase bg-[#021a14]/80 px-4 py-2 backdrop-blur-md self-start">
+                      <span className="text-[#c0c0c0] text-[8px] tracking-[0.3em] uppercase bg-[#021a14]/80 px-4 py-2 backdrop-blur-md self-start">
                         {product.type}
                       </span>
                     </div>
@@ -152,16 +152,16 @@ export default function ProductsPage() {
                   {/* Details */}
                   <div className="space-y-4 px-2">
                     <div className="flex justify-between items-start">
-                      <h3 className="text-2xl font-serif text-stone-100 group-hover:text-[#c2a35d] transition-colors duration-500">
+                      <h3 className="text-2xl font-serif text-stone-100 group-hover:text-[#c0c0c0] transition-colors duration-500">
                         {product.title}
                       </h3>
-                      <Sparkles className="text-[#c2a35d]/20 group-hover:text-[#c2a35d] w-4 h-4 transition-colors duration-700" />
+                      <Sparkles className="text-[#c0c0c0]/20 group-hover:text-[#c0c0c0] w-4 h-4 transition-colors duration-700" />
                     </div>
                     <p className="text-emerald-100/40 text-[10px] font-light leading-relaxed uppercase tracking-widest max-w-xs">
                       {product.desc}
                     </p>
-                    <div className="pt-4 flex justify-between items-center border-t border-[#c2a35d]/10">
-                      <span className="text-[9px] tracking-[0.3em] text-[#c2a35d] uppercase font-medium">
+                    <div className="pt-4 flex justify-between items-center border-t border-[#c0c0c0]/10">
+                      <span className="text-[9px] tracking-[0.3em] text-[#c0c0c0] uppercase font-medium">
                         {product.price}
                       </span>
                       <button className="flex items-center gap-2 text-[8px] text-stone-500 hover:text-stone-100 transition-colors uppercase tracking-[0.4em]">
@@ -193,7 +193,7 @@ export default function ProductsPage() {
             every diamond in our vault. We specialize in Type IIa diamonds—the
             most chemically pure crystals known to man.
           </p>
-          <button className="px-12 py-5 bg-[#021a14] text-[#c2a35d] text-[10px] uppercase tracking-[0.4em] hover:bg-[#c2a35d] hover:text-[#021a14] transition-all duration-700">
+          <button className="px-12 py-5 bg-[#021a14] text-[#c0c0c0] text-[10px] uppercase tracking-[0.4em] hover:bg-[#c0c0c0] hover:text-[#021a14] transition-all duration-700">
             Request Gemmology Consultation
           </button>
         </div>

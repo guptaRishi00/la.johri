@@ -16,7 +16,7 @@ export const Provenance = () => {
           >
             <div className="flex items-center gap-4 mb-6">
               <GraduationCap
-                className="text-[#c2a35d] w-5 h-5"
+                className="text-[#c0c0c0] w-5 h-5"
                 strokeWidth={1}
               />
               <span className="text-[#021a14] uppercase tracking-[0.6em] text-[10px] block">
@@ -66,11 +66,11 @@ export const Provenance = () => {
             <div className="space-y-10">
               <div className="flex items-center gap-4 text-[10px] text-[#021a14] uppercase tracking-wider">
                 <span>Ethical Mine</span>
-                <ArrowRight className="w-3 h-3 text-[#c2a35d]" />
-                <span className="bg-[#021a14] text-[#c2a35d] px-3 py-1">
+                <ArrowRight className="w-3 h-3 text-[#c0c0c0]" />
+                <span className="bg-[#021a14] text-[#c0c0c0] px-3 py-1">
                   LA.JOHRI Atelier
                 </span>
-                <ArrowRight className="w-3 h-3 text-[#c2a35d]" />
+                <ArrowRight className="w-3 h-3 text-[#c0c0c0]" />
                 <span>The Sovereign</span>
               </div>
               <p className="text-xs text-stone-500 leading-loose">
@@ -79,9 +79,9 @@ export const Provenance = () => {
                 your investment is concentrated in the gem itself.
               </p>
               <div className="w-full bg-[#021a14]/10 h-1 rounded-full overflow-hidden">
-                <div className="bg-[#c2a35d] w-[35%] h-full" />
+                <div className="bg-[#c0c0c0] w-[35%] h-full" />
               </div>
-              <span className="text-[9px] uppercase tracking-widest text-[#c2a35d]">
+              <span className="text-[9px] uppercase tracking-widest text-[#c0c0c0]">
                 Transparent Value. Uncompromised.
               </span>
             </div>

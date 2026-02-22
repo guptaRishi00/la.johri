@@ -17,10 +17,10 @@ export const CustomCursor = () => {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 w-10 h-10 rounded-full border border-[#c2a35d]/40 pointer-events-none z-9999 hidden md:flex items-center justify-center mix-blend-difference"
+      className="fixed top-0 left-0 w-10 h-10 rounded-full border border-[#c0c0c0]/40 pointer-events-none z-9999 hidden md:flex items-center justify-center mix-blend-difference"
       style={{ x: mouseX, y: mouseY, translateX: "-50%", translateY: "-50%" }}
     >
-      <div className="w-1 h-1 bg-[#c2a35d] rounded-full" />
+      <div className="w-1 h-1 bg-[#c0c0c0] rounded-full" />
     </motion.div>
   );
 };

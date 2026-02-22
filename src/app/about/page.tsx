@@ -14,7 +14,7 @@ import {
 
 export default function AboutPage() {
   return (
-    <main className="bg-[#021a14] min-h-screen pt-32 selection:bg-[#c2a35d] selection:text-[#021a14]">
+    <main className="bg-[#021a14] min-h-screen pt-32 selection:bg-[#c0c0c0] selection:text-[#021a14]">
       {/* FOUNDER SECTION */}
       <section className="px-6 md:px-12 lg:px-24 mb-32">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-12 gap-16 items-center">
@@ -27,10 +27,10 @@ export default function AboutPage() {
           >
             <div className="flex items-center gap-4 mb-6">
               <GraduationCap
-                className="text-[#c2a35d] w-5 h-5"
+                className="text-[#c0c0c0] w-5 h-5"
                 strokeWidth={1}
               />
-              <span className="text-[#c2a35d] uppercase tracking-[0.8em] text-[10px] block">
+              <span className="text-[#c0c0c0] uppercase tracking-[0.8em] text-[10px] block">
                 The graduate gemmologist
               </span>
             </div>
@@ -58,21 +58,21 @@ export default function AboutPage() {
             transition={{ duration: 1.5 }}
             className="lg:col-span-7 order-1 lg:order-2 relative group"
           >
-            <div className="aspect-[4/5] md:aspect-video overflow-hidden border border-[#c2a35d]/20 bg-emerald-950/20">
+            <div className="aspect-[4/5] md:aspect-video overflow-hidden border border-[#c0c0c0]/20 bg-emerald-950/20">
               <img
                 src={BRAND_IMAGES.OWNER_PORTRAIT}
                 alt="Founder & Gemmologist"
-                className="w-full h-full object-cover grayscale transition-all duration-[3s] group-hover:grayscale-0 group-hover:scale-105"
+                className="w-full h-full object-cover transition-all duration-[3s] group-hover:grayscale-0 group-hover:scale-105"
               />
             </div>
-            <div className="absolute -bottom-6 -left-6 w-32 h-32 border border-[#c2a35d]/10 pointer-events-none z-10" />
+            <div className="absolute -bottom-6 -left-6 w-32 h-32 border border-[#c0c0c0]/10 pointer-events-none z-10" />
           </motion.div>
         </div>
       </section>
 
       {/* GLOBAL SOURCING & FAIR PRICING */}
       <section className="bg-white py-32 px-6 md:px-12 lg:px-24 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-64 h-64 bg-[#c2a35d]/5 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute top-0 right-0 w-64 h-64 bg-[#c0c0c0]/5 rounded-full blur-3xl pointer-events-none" />
 
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-20 lg:gap-32">
@@ -84,14 +84,14 @@ export default function AboutPage() {
               transition={{ duration: 1 }}
             >
               <div className="flex items-center gap-3 mb-8">
-                <Globe className="text-[#c2a35d] w-5 h-5" strokeWidth={1} />
+                <Globe className="text-[#c0c0c0] w-5 h-5" strokeWidth={1} />
                 <span className="text-[#021a14] uppercase tracking-[0.6em] text-[10px]">
                   Global Provenance
                 </span>
               </div>
               <h2 className="text-4xl md:text-5xl font-serif text-[#021a14] mb-8 leading-tight">
                 Sourced from the <br />{" "}
-                <span className="italic text-[#c2a35d]">Source.</span>
+                <span className="italic text-[#c0c0c0]">Source.</span>
               </h2>
               <p className="text-stone-600 font-light text-sm leading-relaxed mb-12">
                 We bypass international brokers and middlemen, maintaining
@@ -99,7 +99,7 @@ export default function AboutPage() {
                 geologies known for high-quality gems.
               </p>
 
-              <div className="space-y-8 border-l border-[#c2a35d]/30 pl-8">
+              <div className="space-y-8 border-l border-[#c0c0c0]/30 pl-8">
                 {[
                   {
                     region: "The historic lands of India",
@@ -120,7 +120,7 @@ export default function AboutPage() {
                   },
                 ].map((item, i) => (
                   <div key={i} className="group cursor-default">
-                    <h4 className="text-[#021a14] font-serif text-lg mb-2 group-hover:text-[#c2a35d] transition-colors">
+                    <h4 className="text-[#021a14] font-serif text-lg mb-2 group-hover:text-[#c0c0c0] transition-colors">
                       {item.region}
                     </h4>
                     <p className="text-xs text-stone-500 leading-relaxed max-w-sm uppercase tracking-wider">
@@ -140,14 +140,14 @@ export default function AboutPage() {
               className="bg-stone-50 p-8 md:p-12 border border-stone-100 relative"
             >
               <div className="flex items-center gap-3 mb-8">
-                <Scale className="text-[#c2a35d] w-5 h-5" strokeWidth={1} />
+                <Scale className="text-[#c0c0c0] w-5 h-5" strokeWidth={1} />
                 <span className="text-[#021a14] uppercase tracking-[0.6em] text-[10px]">
                   Transparent Pricing
                 </span>
               </div>
               <h2 className="text-4xl md:text-5xl font-serif text-[#021a14] mb-8 leading-tight">
                 The Cost of <br />{" "}
-                <span className="italic text-stone-400 line-through decoration-[#c2a35d]">
+                <span className="italic text-stone-400 line-through decoration-[#c0c0c0]">
                   Tradition.
                 </span>
               </h2>
@@ -194,17 +194,17 @@ export default function AboutPage() {
                   </h5>
                   <div className="flex items-center gap-4 text-[10px] text-[#021a14] uppercase tracking-wider mb-2">
                     <span>Mine</span>
-                    <ArrowRight className="w-3 h-3 text-[#c2a35d]" />
-                    <span className="bg-[#021a14] text-[#c2a35d] px-2 py-1">
+                    <ArrowRight className="w-3 h-3 text-[#c0c0c0]" />
+                    <span className="bg-[#021a14] text-[#c0c0c0] px-2 py-1">
                       LA.JOHRI
                     </span>
-                    <ArrowRight className="w-3 h-3 text-[#c2a35d]" />
+                    <ArrowRight className="w-3 h-3 text-[#c0c0c0]" />
                     <span>You</span>
                   </div>
                   <div className="w-full bg-[#021a14]/10 h-1 rounded-full overflow-hidden flex">
-                    <div className="bg-[#c2a35d] w-[35%] h-full" />
+                    <div className="bg-[#c0c0c0] w-[35%] h-full" />
                   </div>
-                  <div className="mt-2 text-left text-xs text-[#c2a35d] font-serif italic">
+                  <div className="mt-2 text-left text-xs text-[#c0c0c0] font-serif italic">
                     Fair Value. Uncompromised.
                   </div>
                 </div>
@@ -218,7 +218,7 @@ export default function AboutPage() {
       <section className="bg-[#0c0c0c] py-32 px-6 md:px-12 lg:px-24 text-stone-200">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-24">
-            <span className="text-[#c2a35d] uppercase tracking-[0.8em] text-[10px] block mb-4">
+            <span className="text-[#c0c0c0] uppercase tracking-[0.8em] text-[10px] block mb-4">
               The Atelier
             </span>
             <h2 className="text-4xl md:text-6xl font-serif font-light italic mb-6">
@@ -244,9 +244,9 @@ export default function AboutPage() {
               transition={{ delay: 0.1 }}
               className="relative z-10 bg-[#0c0c0c] pt-8"
             >
-              <div className="w-16 h-16 bg-[#1a1a1a] flex items-center justify-center border border-stone-800 mb-8 mx-auto rounded-full group hover:border-[#c2a35d] transition-colors">
+              <div className="w-16 h-16 bg-[#1a1a1a] flex items-center justify-center border border-stone-800 mb-8 mx-auto rounded-full group hover:border-[#c0c0c0] transition-colors">
                 <Flame
-                  className="text-stone-400 w-6 h-6 group-hover:text-[#c2a35d]"
+                  className="text-stone-400 w-6 h-6 group-hover:text-[#c0c0c0]"
                   strokeWidth={1}
                 />
               </div>
@@ -266,9 +266,9 @@ export default function AboutPage() {
               transition={{ delay: 0.2 }}
               className="relative z-10 bg-[#0c0c0c] pt-8"
             >
-              <div className="w-16 h-16 bg-[#1a1a1a] flex items-center justify-center border border-stone-800 mb-8 mx-auto rounded-full group hover:border-[#c2a35d] transition-colors">
+              <div className="w-16 h-16 bg-[#1a1a1a] flex items-center justify-center border border-stone-800 mb-8 mx-auto rounded-full group hover:border-[#c0c0c0] transition-colors">
                 <PenTool
-                  className="text-stone-400 w-6 h-6 group-hover:text-[#c2a35d]"
+                  className="text-stone-400 w-6 h-6 group-hover:text-[#c0c0c0]"
                   strokeWidth={1}
                 />
               </div>
@@ -290,9 +290,9 @@ export default function AboutPage() {
               transition={{ delay: 0.3 }}
               className="relative z-10 bg-[#0c0c0c] pt-8"
             >
-              <div className="w-16 h-16 bg-[#1a1a1a] flex items-center justify-center border border-stone-800 mb-8 mx-auto rounded-full group hover:border-[#c2a35d] transition-colors">
+              <div className="w-16 h-16 bg-[#1a1a1a] flex items-center justify-center border border-stone-800 mb-8 mx-auto rounded-full group hover:border-[#c0c0c0] transition-colors">
                 <Hammer
-                  className="text-stone-400 w-6 h-6 group-hover:text-[#c2a35d]"
+                  className="text-stone-400 w-6 h-6 group-hover:text-[#c0c0c0]"
                   strokeWidth={1}
                 />
               </div>
@@ -326,7 +326,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="space-y-12"
           >
-            <span className="text-[#c2a35d] uppercase tracking-[0.8em] text-[10px] block">
+            <span className="text-[#c0c0c0] uppercase tracking-[0.8em] text-[10px] block">
               Direct Access
             </span>
             <h3 className="text-4xl md:text-6xl font-serif text-stone-100 font-light leading-tight">
@@ -340,7 +340,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-2 gap-8 pt-8 border-t border-emerald-950/50">
               <div className="space-y-2">
                 <Globe
-                  className="text-[#c2a35d] w-4 h-4 mb-2"
+                  className="text-[#c0c0c0] w-4 h-4 mb-2"
                   strokeWidth={1}
                 />
                 <h6 className="text-[9px] uppercase tracking-widest text-stone-100">
@@ -352,7 +352,7 @@ export default function AboutPage() {
               </div>
               <div className="space-y-2">
                 <Scale
-                  className="text-[#c2a35d] w-4 h-4 mb-2"
+                  className="text-[#c0c0c0] w-4 h-4 mb-2"
                   strokeWidth={1}
                 />
                 <h6 className="text-[9px] uppercase tracking-widest text-stone-100">

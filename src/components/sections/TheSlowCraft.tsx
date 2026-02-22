@@ -15,7 +15,7 @@ export const TheSlowCraft = () => {
           <Clock className="mx-auto text-[#021a14] w-10 h-10 mb-10 stroke-[0.5px]" />
           <h2 className="text-4xl md:text-6xl font-serif text-[#021a14] leading-tight font-light mb-12">
             The Temple of{" "}
-            <span className="italic text-[#c2a35d]">Patience</span>.
+            <span className="italic text-[#c0c0c0]">Patience</span>.
           </h2>
           <p className="text-stone-500 font-light leading-loose text-base mb-16">
             Located in the heritage district of Varanasi, our atelier is not a
@@ -26,7 +26,7 @@ export const TheSlowCraft = () => {
 
           <div className="grid md:grid-cols-2 gap-12 text-left border-t border-stone-100 pt-16">
             <div className="space-y-4">
-              <span className="text-[#c2a35d] text-[10px] uppercase tracking-widest font-bold">
+              <span className="text-[#c0c0c0] text-[10px] uppercase tracking-widest font-bold">
                 The Ritual
               </span>
               <p className="text-xs text-stone-400 leading-relaxed uppercase tracking-wider">
@@ -35,7 +35,7 @@ export const TheSlowCraft = () => {
               </p>
             </div>
             <div className="space-y-4">
-              <span className="text-[#c2a35d] text-[10px] uppercase tracking-widest font-bold">
+              <span className="text-[#c0c0c0] text-[10px] uppercase tracking-widest font-bold">
                 The Fabrication
               </span>
               <p className="text-xs text-stone-400 leading-relaxed uppercase tracking-wider">

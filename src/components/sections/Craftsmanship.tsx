@@ -25,7 +25,7 @@ export const Craftsmanship = () => {
           </motion.div>
 
           {/* Decorative Border Box - Adjusted for mobile */}
-          <div className="absolute -bottom-6 -left-6 md:-bottom-12 md:-left-12 w-32 h-32 md:w-72 md:h-72 border border-[#c2a35d]/20 z-10 pointer-events-none" />
+          <div className="absolute -bottom-6 -left-6 md:-bottom-12 md:-left-12 w-32 h-32 md:w-72 md:h-72 border border-[#c0c0c0]/20 z-10 pointer-events-none" />
         </div>
 
         {/* Text Content Section */}
@@ -35,7 +35,7 @@ export const Craftsmanship = () => {
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
-              className="text-[#c2a35d] uppercase tracking-[0.4em] md:tracking-[0.6em] text-[9px] md:text-[10px] block font-medium"
+              className="text-[#c0c0c0] uppercase tracking-[0.4em] md:tracking-[0.6em] text-[9px] md:text-[10px] block font-medium"
             >
               The Human Soul
             </motion.span>
@@ -68,14 +68,14 @@ export const Craftsmanship = () => {
             transition={{ duration: 1, delay: 0.6 }}
             className="flex items-center gap-4 group"
           >
-            <div className="w-12 h-12 md:w-14 md:h-14 rounded-full border border-[#c2a35d]/20 flex items-center justify-center group-hover:bg-[#c2a35d] transition-all duration-700">
+            <div className="w-12 h-12 md:w-14 md:h-14 rounded-full border border-[#c0c0c0]/20 flex items-center justify-center group-hover:bg-[#c0c0c0] transition-all duration-700">
               <Play
                 size={14}
                 fill="currentColor"
-                className="group-hover:text-[#021a14] text-[#c2a35d] transition-colors"
+                className="group-hover:text-[#021a14] text-[#c0c0c0] transition-colors"
               />
             </div>
-            <span className="text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.4em] text-[#c2a35d]">
+            <span className="text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.4em] text-[#c0c0c0]">
               Witness the Process
             </span>
           </motion.button>

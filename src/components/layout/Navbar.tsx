@@ -44,14 +44,14 @@ export const Navbar = () => {
             aria-label="Toggle Menu"
           >
             <span
-              className={`h-px bg-[#c2a35d] transition-all duration-500 ${
+              className={`h-px bg-[#c0c0c0] transition-all duration-500 ${
                 isMenuOpen
                   ? "w-6 md:w-8 rotate-45 translate-y-2 md:translate-y-2.5"
                   : "w-6 md:w-8"
               }`}
             />
             <span
-              className={`h-px bg-[#c2a35d] transition-all duration-500 ${
+              className={`h-px bg-[#c0c0c0] transition-all duration-500 ${
                 isMenuOpen
                   ? "w-6 md:w-8 -rotate-45"
                   : "w-4 md:w-5 group-hover:w-6 md:group-hover:w-8"
@@ -64,7 +64,7 @@ export const Navbar = () => {
               <Link
                 key={link.name}
                 href={link.href}
-                className="hover:text-[#c2a35d] transition-colors"
+                className="hover:text-[#c0c0c0] transition-colors"
               >
                 {link.name}
               </Link>
@@ -77,7 +77,7 @@ export const Navbar = () => {
           {/* pointer-events-none ensures the absolute div doesn't block clicks on sides, 
               but we re-enable pointer-events-auto on the Link itself */}
           <Link href="/" className="pointer-events-auto inline-block">
-            <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-serif tracking-[0.2em] sm:tracking-[0.3em] md:tracking-[0.5em] text-[#c2a35d] font-light cursor-pointer whitespace-nowrap">
+            <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-serif tracking-[0.2em] sm:tracking-[0.3em] md:tracking-[0.5em] text-[#c0c0c0] font-light cursor-pointer whitespace-nowrap">
               LA.JOHRI
             </h1>
           </Link>
@@ -87,14 +87,14 @@ export const Navbar = () => {
         <div className="hidden lg:flex items-center gap-4 md:gap-12 z-50">
           <Link
             href="/calculator"
-            className="hidden xl:block text-[10px] uppercase tracking-[0.4em] text-emerald-100 hover:text-[#c2a35d] transition-colors"
+            className="hidden xl:block text-[10px] uppercase tracking-[0.4em] text-emerald-100 hover:text-[#c0c0c0] transition-colors"
           >
             Gemstone Calculator
           </Link>
 
           <Link
             href="/enquire"
-            className="px-6 md:px-10 py-2.5 md:py-3 bg-[#c2a35d]/10 hover:bg-[#c2a35d] text-[#c2a35d] hover:text-[#021a14] border border-[#c2a35d]/30 text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.4em] transition-all duration-700 font-medium whitespace-nowrap"
+            className="px-6 md:px-10 py-2.5 md:py-3 bg-[#c0c0c0]/10 hover:bg-[#c0c0c0] text-[#c0c0c0] hover:text-[#021a14] border border-[#c0c0c0]/30 text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.4em] transition-all duration-700 font-medium whitespace-nowrap"
           >
             Enquire
           </Link>
@@ -126,7 +126,7 @@ export const Navbar = () => {
                   <Link
                     href={link.href}
                     onClick={() => setIsMenuOpen(false)}
-                    className="text-3xl md:text-5xl font-serif text-[#c2a35d] tracking-widest uppercase hover:text-white transition-colors"
+                    className="text-3xl md:text-5xl font-serif text-[#c0c0c0] tracking-widest uppercase hover:text-white transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -142,7 +142,7 @@ export const Navbar = () => {
                 <Link
                   href="/calculator"
                   onClick={() => setIsMenuOpen(false)}
-                  className="text-xl md:text-3xl font-serif text-[#c2a35d]/80 tracking-widest uppercase hover:text-white transition-colors"
+                  className="text-xl md:text-3xl font-serif text-[#c0c0c0]/80 tracking-widest uppercase hover:text-white transition-colors"
                 >
                   Calculator
                 </Link>
@@ -152,7 +152,7 @@ export const Navbar = () => {
                 <Link
                   href="/enquire"
                   onClick={() => setIsMenuOpen(false)}
-                  className="px-8 py-3 bg-[#c2a35d]/10 hover:bg-[#c2a35d] text-[#c2a35d] hover:text-[#021a14] border border-[#c2a35d]/30 text-xs uppercase tracking-[0.4em] transition-all duration-700 font-medium whitespace-nowrap"
+                  className="px-8 py-3 bg-[#c0c0c0]/10 hover:bg-[#c0c0c0] text-[#c0c0c0] hover:text-[#021a14] border border-[#c0c0c0]/30 text-xs uppercase tracking-[0.4em] transition-all duration-700 font-medium whitespace-nowrap"
                 >
                   Contact Us
                 </Link>
@@ -162,7 +162,7 @@ export const Navbar = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.7 }}
-                className="mt-8 pt-8 border-t border-[#c2a35d]/20 flex flex-col gap-3 text-[10px] uppercase tracking-[0.3em] text-stone-500 w-full"
+                className="mt-8 pt-8 border-t border-[#c0c0c0]/20 flex flex-col gap-3 text-[10px] uppercase tracking-[0.3em] text-stone-500 w-full"
               >
                 <p>Instagram — Heritage</p>
                 <p>Location — Jaipur, India</p>

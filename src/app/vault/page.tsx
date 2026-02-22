@@ -29,16 +29,16 @@ const vaultCategories = [
 
 export default function VaultPage() {
   return (
-    <main className="bg-[#021a14] min-h-screen pt-32 selection:bg-[#c2a35d] selection:text-[#021a14]">
+    <main className="bg-[#021a14] min-h-screen pt-32 selection:bg-[#c0c0c0] selection:text-[#021a14]">
       {/* Hero: The Sanctuary of Rarity */}
-      <section className="px-6 md:px-12 lg:px-24 mb-32 border-b border-[#c2a35d]/10 pb-24">
+      <section className="px-6 md:px-12 lg:px-24 mb-32 border-b border-[#c0c0c0]/10 pb-24">
         <div className="max-w-7xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5 }}
           >
-            <span className="text-[#c2a35d] uppercase tracking-[1em] text-[10px] mb-8 block">
+            <span className="text-[#c0c0c0] uppercase tracking-[1em] text-[10px] mb-8 block">
               Entry Forbidden to the Ordinary
             </span>
             <h1 className="text-6xl md:text-8xl lg:text-[10vw] font-serif text-stone-100 font-light italic leading-none mb-12">
@@ -73,12 +73,12 @@ export default function VaultPage() {
                     className="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-[2s]"
                   />
                   <div className="absolute bottom-6 left-6 z-20">
-                    <span className="text-[#c2a35d] text-[10px] tracking-widest uppercase bg-[#021a14]/80 px-4 py-2 backdrop-blur-md">
+                    <span className="text-[#c0c0c0] text-[10px] tracking-widest uppercase bg-[#021a14]/80 px-4 py-2 backdrop-blur-md">
                       {category.count}
                     </span>
                   </div>
                 </div>
-                <h3 className="text-2xl font-serif text-stone-100 mb-4 group-hover:text-[#c2a35d] transition-colors duration-500">
+                <h3 className="text-2xl font-serif text-stone-100 mb-4 group-hover:text-[#c0c0c0] transition-colors duration-500">
                   {category.title}
                 </h3>
                 <p className="text-emerald-100/40 text-xs font-light leading-relaxed uppercase tracking-widest">
@@ -99,7 +99,7 @@ export default function VaultPage() {
             <span className="italic">Digital Ancestry Ledger</span>, ensuring
             your legacy is etched in time.
           </h2>
-          <button className="px-12 py-4 border border-[#021a14]/20 text-[#021a14] text-[10px] uppercase tracking-[0.4em] hover:bg-[#021a14] hover:text-[#c2a35d] transition-all duration-700">
+          <button className="px-12 py-4 border border-[#021a14]/20 text-[#021a14] text-[10px] uppercase tracking-[0.4em] hover:bg-[#021a14] hover:text-[#c0c0c0] transition-all duration-700">
             Request Access Credentials
           </button>
         </div>

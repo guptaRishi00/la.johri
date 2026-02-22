@@ -29,7 +29,7 @@ export default function LandingPage() {
   }, []);
 
   return (
-    <div className="bg-[#021a14] min-h-screen selection:bg-[#c2a35d] selection:text-[#021a14] scroll-smooth cursor-none">
+    <div className="bg-[#021a14] min-h-screen selection:bg-[#c0c0c0] selection:text-[#021a14] scroll-smooth cursor-none">
       <CustomCursor />
       <AnimatePresence>
         {loading && <LoadingScreen key="loader" />}

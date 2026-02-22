@@ -24,7 +24,7 @@ const editorialStories = [
 
 export default function CurationPage() {
   return (
-    <main className="bg-[#021a14] min-h-screen pt-32 selection:bg-[#c2a35d] selection:text-[#021a14]">
+    <main className="bg-[#021a14] min-h-screen pt-32 selection:bg-[#c0c0c0] selection:text-[#021a14]">
       {/* Header */}
       <section className="px-6 md:px-12 lg:px-24 mb-32">
         <div className="max-w-7xl mx-auto">
@@ -35,7 +35,7 @@ export default function CurationPage() {
             className="flex flex-col md:flex-row justify-between items-end gap-12"
           >
             <div className="max-w-2xl">
-              <span className="text-[#c2a35d] uppercase tracking-[1em] text-[10px] mb-8 block">
+              <span className="text-[#c0c0c0] uppercase tracking-[1em] text-[10px] mb-8 block">
                 The Editorial Perspective
               </span>
               <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif text-stone-100 font-light italic leading-none">
@@ -76,7 +76,7 @@ export default function CurationPage() {
 
               {/* Text Block */}
               <div className="w-full md:w-2/5 space-y-8">
-                <span className="text-[#c2a35d] text-[9px] uppercase tracking-[0.6em]">
+                <span className="text-[#c0c0c0] text-[9px] uppercase tracking-[0.6em]">
                   {story.tag}
                 </span>
                 <h3 className="text-4xl md:text-5xl font-serif text-stone-100 font-light">
@@ -85,7 +85,7 @@ export default function CurationPage() {
                 <p className="text-emerald-100/40 text-sm font-light leading-loose tracking-wide">
                   {story.description}
                 </p>
-                <button className="pt-4 text-[#c2a35d] text-[10px] uppercase tracking-[0.4em] border-b border-[#c2a35d]/20 hover:border-[#c2a35d] transition-all duration-500">
+                <button className="pt-4 text-[#c0c0c0] text-[10px] uppercase tracking-[0.4em] border-b border-[#c0c0c0]/20 hover:border-[#c0c0c0] transition-all duration-500">
                   Read Journal
                 </button>
               </div>
