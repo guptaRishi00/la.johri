@@ -14,33 +14,32 @@ export const TheSlowCraft = () => {
         >
           <Clock className="mx-auto text-[#021a14] w-10 h-10 mb-10 stroke-[0.5px]" />
           <h2 className="text-4xl md:text-6xl font-serif text-[#021a14] leading-tight font-light mb-12">
-            The Temple of{" "}
-            <span className="italic text-[#c0c0c0]">Patience</span>.
+            Crafted, Not{" "}
+            <span className="italic text-[#c0c0c0]">Rushed</span>.
           </h2>
           <p className="text-stone-500 font-light leading-loose text-base mb-16">
-            Located in the heritage district of Varanasi, our atelier is not a
-            factory, but a sanctuary of silence. Each piece remains on the
-            artisan's bench for weeks, absorbing the rhythm of hand-tools used
-            for generations.
+            Every gemstone is set with care. Every detail is perfected. Your
+            custom piece receives dedicated attention throughout its creation —
+            from your initial vision to the moment you hold it in your hands.
           </p>
 
           <div className="grid md:grid-cols-2 gap-12 text-left border-t border-stone-100 pt-16">
             <div className="space-y-4">
               <span className="text-[#c0c0c0] text-[10px] uppercase tracking-widest font-bold">
-                The Ritual
+                Sourcing Standards
               </span>
               <p className="text-xs text-stone-400 leading-relaxed uppercase tracking-wider">
-                Only the most vibrant Zambian emeralds and purest 22k gold are
-                permitted entry into the forge.
+                Only the most certified gemstones and the finest metals enter
+                our process. Every stone is authenticated before crafting begins.
               </p>
             </div>
             <div className="space-y-4">
               <span className="text-[#c0c0c0] text-[10px] uppercase tracking-widest font-bold">
-                The Fabrication
+                Built for Generations
               </span>
               <p className="text-xs text-stone-400 leading-relaxed uppercase tracking-wider">
-                We reject mass production. Each artifact is hand-fabricated from
-                solid gold to ensure heirloom quality.
+                Hand fabricated for longevity. Every detail crafted to withstand
+                time and become a family heirloom.
               </p>
             </div>
           </div>

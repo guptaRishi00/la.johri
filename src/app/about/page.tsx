@@ -31,7 +31,7 @@ export default function AboutPage() {
                 strokeWidth={1}
               />
               <span className="text-[#c0c0c0] uppercase tracking-[0.8em] text-[10px] block">
-                The graduate gemmologist
+                The certified gemmologist
               </span>
             </div>
             <h1 className="text-5xl md:text-7xl font-serif text-stone-100 font-light italic leading-tight mb-8">

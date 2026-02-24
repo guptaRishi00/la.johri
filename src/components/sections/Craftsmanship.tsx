@@ -37,7 +37,7 @@ export const Craftsmanship = () => {
               transition={{ duration: 1 }}
               className="text-[#c0c0c0] uppercase tracking-[0.4em] md:tracking-[0.6em] text-[9px] md:text-[10px] block font-medium"
             >
-              The Human Soul
+              The Path to Perfection
             </motion.span>
 
             <motion.h3
@@ -46,7 +46,7 @@ export const Craftsmanship = () => {
               transition={{ duration: 1, delay: 0.2 }}
               className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-wider md:tracking-widest font-serif text-stone-100 leading-tight font-light"
             >
-              The Atelier
+              Vision to Reality
             </motion.h3>
           </div>
 
@@ -56,10 +56,10 @@ export const Craftsmanship = () => {
             transition={{ duration: 1, delay: 0.4 }}
             className="text-emerald-100/40 font-light leading-relaxed md:leading-loose text-sm md:text-base max-w-md"
           >
-            Our workshop in Benares is a sanctuary of silence. Here, the
-            clinking of gold is the only language spoken. Every la.johri piece
-            is born from a dialogue between the master karigar and the living
-            metal. We do not manufacture; we manifest.
+            Every gemstone is unique. Every vision deserves precision. We guide
+            you through each option with complete clarity on sourcing,
+            authenticity, and fair value. Your choice. Your timeline. Your
+            perfect piece.
           </motion.p>
 
           <motion.button
@@ -76,7 +76,7 @@ export const Craftsmanship = () => {
               />
             </div>
             <span className="text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.4em] text-[#c0c0c0]">
-              Witness the Process
+              Witness the Journey
             </span>
           </motion.button>
         </div>

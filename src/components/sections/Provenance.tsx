@@ -20,7 +20,7 @@ export const Provenance = () => {
                 strokeWidth={1}
               />
               <span className="text-[#021a14] uppercase tracking-[0.6em] text-[10px] block">
-                The Graduate Gemmologist
+                The Certified Gemmologist
               </span>
             </div>
             <h2 className="text-4xl md:text-6xl font-serif text-[#021a14] mb-8 leading-tight">

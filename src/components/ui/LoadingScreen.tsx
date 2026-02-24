@@ -19,7 +19,7 @@ export const LoadingScreen = () => (
       <div className="mt-12 flex justify-center items-center gap-6">
         <div className="w-12 h-px bg-[#c0c0c0]/20" />
         <p className="text-[9px] uppercase tracking-[1em] text-emerald-100/30">
-          Heritage 1924
+          Certified Gemologist
         </p>
         <div className="w-12 h-px bg-[#c0c0c0]/20" />
       </div>

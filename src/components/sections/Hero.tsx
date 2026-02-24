@@ -30,7 +30,7 @@ export const Hero = () => {
           className="mb-8 md:mb-16 lg:mb-10"
         >
           <span className="text-[#c0c0c0] font-light text-[9px] md:text-[11px] uppercase tracking-[0.6em] md:tracking-[1em] mb-4 md:mb-6 block">
-            Antiquity Preserved
+            Your Vision, Our Expertise
           </span>
           <div className="w-12 md:w-16 h-px bg-[#c0c0c0]/30 mx-auto" />
         </motion.div>
@@ -43,8 +43,8 @@ export const Hero = () => {
             transition={{ duration: 2, ease: [0.16, 1, 0.3, 1] }}
             className="text-5xl sm:text-6xl md:text-[9vw] lg:text-[10vw] font-serif text-stone-100 leading-[1.2] md:leading-[1.1] font-light"
           >
-            A Sacred <br className="md:hidden" />
-            <span className="italic text-[#c0c0c0]/80"> Presence</span>
+            Crafted with <br className="md:hidden" />
+            <span className="italic text-[#c0c0c0]/80"> Precision</span>
           </motion.h2>
         </div>
 
@@ -56,9 +56,9 @@ export const Hero = () => {
           className="max-w-70 sm:max-w-md md:max-w-2xl mx-auto"
         >
           <p className="text-emerald-100/50 text-[10px] md:text-xs tracking-[0.3em] md:tracking-[0.5em] leading-loose md:leading-[2.2] font-light uppercase">
-            From the deep earth to the divine body.{" "}
+            Your vision deserves certified expertise.{" "}
             <br className="hidden sm:block" />
-            Handcrafted artifacts for the modern sovereign.
+            Custom jewelry backed by gemologist knowledge.
           </p>
         </motion.div>
 

@@ -30,11 +30,10 @@ export const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 w-full z-50 transition-all duration-700 px-4 sm:px-6 md:px-12 py-4 md:py-8 flex justify-between items-center ${
-          isScrolled || isMenuOpen
+        className={`fixed top-0 w-full z-50 transition-all duration-700 px-4 sm:px-6 md:px-12 py-4 md:py-8 flex justify-between items-center ${isScrolled || isMenuOpen
             ? "bg-[#021a14]/95 backdrop-blur-xl py-4 md:py-6 shadow-lg"
             : "bg-transparent"
-        }`}
+          }`}
       >
         {/* Left Side: Burger & Desktop Links */}
         <div className="flex items-center gap-6 md:gap-16 z-50">
@@ -44,18 +43,16 @@ export const Navbar = () => {
             aria-label="Toggle Menu"
           >
             <span
-              className={`h-px bg-[#c0c0c0] transition-all duration-500 ${
-                isMenuOpen
+              className={`h-px bg-[#c0c0c0] transition-all duration-500 ${isMenuOpen
                   ? "w-6 md:w-8 rotate-45 translate-y-2 md:translate-y-2.5"
                   : "w-6 md:w-8"
-              }`}
+                }`}
             />
             <span
-              className={`h-px bg-[#c0c0c0] transition-all duration-500 ${
-                isMenuOpen
+              className={`h-px bg-[#c0c0c0] transition-all duration-500 ${isMenuOpen
                   ? "w-6 md:w-8 -rotate-45"
                   : "w-4 md:w-5 group-hover:w-6 md:group-hover:w-8"
-              }`}
+                }`}
             />
           </button>
 
@@ -85,12 +82,6 @@ export const Navbar = () => {
 
         {/* Right Side: Concierge & CTA (Desktop Only - hidden on mobile to save space) */}
         <div className="hidden lg:flex items-center gap-4 md:gap-12 z-50">
-          <Link
-            href="/calculator"
-            className="hidden xl:block text-[10px] uppercase tracking-[0.4em] text-emerald-100 hover:text-[#c0c0c0] transition-colors"
-          >
-            Gemstone Calculator
-          </Link>
 
           <Link
             href="/enquire"
@@ -133,20 +124,6 @@ export const Navbar = () => {
                 </motion.div>
               ))}
 
-              {/* Added: Gemstone Calculator for Mobile (Since it's hidden on Navbar) */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5 }}
-              >
-                <Link
-                  href="/calculator"
-                  onClick={() => setIsMenuOpen(false)}
-                  className="text-xl md:text-3xl font-serif text-[#c0c0c0]/80 tracking-widest uppercase hover:text-white transition-colors"
-                >
-                  Calculator
-                </Link>
-              </motion.div>
 
               <div className="flex flex-col items-center gap-6 mt-4">
                 <Link

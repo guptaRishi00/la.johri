@@ -5,7 +5,7 @@ import { Flame, Hammer, PenTool } from "lucide-react";
 
 export const TheForge = () => {
   return (
-    <section className="bg-[#0c0c0c] py-32 px-6 md:px-12 lg:px-24 text-stone-200 overflow-hidden">
+    <section className="bg-[#021a14] py-32 px-6 md:px-12 lg:px-24 text-stone-200 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-24">
           <span className="text-[#c0c0c0] uppercase tracking-[0.8em] text-[10px] block mb-4">
