@@ -1,5 +1,6 @@
 import React from "react";
-import { Instagram, Facebook } from "lucide-react";
+import { Instagram } from "lucide-react";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
@@ -15,8 +16,7 @@ export const Footer = () => {
                 The Flagship
               </h6>
               <p className="text-xs font-light leading-relaxed">
-                Level 4, The Royal Orchid <br /> Varanasi, Heritage District
-                221001
+                Chhattisgarh, India
               </p>
             </div>
             <div className="space-y-4">
@@ -24,7 +24,10 @@ export const Footer = () => {
                 Inquiries
               </h6>
               <p className="text-xs font-light leading-relaxed underline underline-offset-8">
-                concierge@lajohri.com
+                lajohri@gmail.com
+              </p>
+              <p className="text-xs font-light leading-relaxed mt-2">
+                +91-9131947571
               </p>
             </div>
           </div>
@@ -36,24 +39,9 @@ export const Footer = () => {
           </h6>
           <ul className="space-y-6 text-[10px] uppercase tracking-[0.3em]">
             <li>
-              <a href="#" className="hover:text-[#c0c0c0] transition-colors">
-                Temple Heritage
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-[#c0c0c0] transition-colors">
-                Emerald Archives
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-[#c0c0c0] transition-colors">
-                Bespoke Couture
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-[#c0c0c0] transition-colors">
-                The Royal Male
-              </a>
+              <Link href="/products" className="hover:text-[#c0c0c0] transition-colors">
+                Our Products
+              </Link>
             </li>
           </ul>
         </div>
@@ -62,24 +50,20 @@ export const Footer = () => {
           <h6 className="text-[10px] uppercase tracking-[0.4em] text-stone-100 mb-10">
             Connect
           </h6>
-          <div className="flex gap-8 mb-16">
-            <Instagram
-              size={20}
-              className="hover:text-[#c0c0c0] cursor-pointer"
-              strokeWidth={1}
-            />
-            <Facebook
-              size={20}
-              className="hover:text-[#c0c0c0] cursor-pointer"
-              strokeWidth={1}
-            />
-          </div>
-          <div className="relative border-b border-[#c0c0c0]/30 pb-3">
-            <input
-              type="email"
-              placeholder="JOIN THE LIST"
-              className="bg-transparent text-[10px] tracking-[0.4em] outline-none w-full placeholder:text-emerald-100/20"
-            />
+          <div className="flex gap-8">
+            <a href="https://www.instagram.com/la.johri" target="_blank" rel="noopener noreferrer">
+              <Instagram
+                size={20}
+                className="hover:text-[#c0c0c0] cursor-pointer"
+                strokeWidth={1}
+              />
+            </a>
+            <a href="https://wa.me/919131947571" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="hover:text-[#c0c0c0] cursor-pointer">
+                <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+                <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>

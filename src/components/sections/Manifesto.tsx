@@ -38,9 +38,10 @@ export const Manifesto = () => {
 
         {/* The Quote - Fluid Typography */}
         <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-serif text-stone-100 italic leading-relaxed md:leading-snug font-light">
-          "Jewellery is the <span className="text-[#c0c0c0]">silent pulse</span>{" "}
-          of a lineage. At la.johri, we don't curate items; we curate the{" "}
-          <span className="text-[#c0c0c0]">spirit of antiquity</span> itself."
+          "Jewelry is the <span className="text-[#c0c0c0]">timeless voice</span>{" "}
+          of your story. At La Johri, we don't just craft pieces—we craft{" "}
+          <span className="text-[#c0c0c0]">legacies</span>, blending modern
+          elegance with a heritage of brilliance."
         </h2>
 
         {/* Footer Label - Tracking reduced for mobile readability */}

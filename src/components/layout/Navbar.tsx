@@ -141,8 +141,7 @@ export const Navbar = () => {
                 transition={{ delay: 0.7 }}
                 className="mt-8 pt-8 border-t border-[#c0c0c0]/20 flex flex-col gap-3 text-[10px] uppercase tracking-[0.3em] text-stone-500 w-full"
               >
-                <p>Instagram — Heritage</p>
-                <p>Location — Jaipur, India</p>
+                <p>Location — Chhattisgarh, India</p>
               </motion.div>
             </div>
           </motion.div>

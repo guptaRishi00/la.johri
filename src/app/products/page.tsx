@@ -6,31 +6,48 @@ import { BRAND_IMAGES } from "@/constants/images";
 import { ArrowRight, Filter, ShoppingBag, Sparkles } from "lucide-react";
 
 const productCategories = [
-  { id: "all", name: "All Acquisitions" },
   { id: "diamonds", name: "Diamonds" },
-  { id: "gems", name: "Rare Gemstones" },
-  { id: "jewelry", name: "Fine Jewelry" },
+  { id: "gems", name: "Gemstones" },
+  { id: "jewelry", name: "Jewellery" },
 ];
 
 const products = [
   {
     id: 1,
-    title: "The Sovereign Solitaire",
+    title: "Polish Diamonds",
     category: "diamonds",
-    type: "3.5ct D-IF Oval",
+    type: "Certified Polish",
     price: "Inquire for Pricing",
-    image: "https://imgs.search.brave.com/-DJlJa1mruPad4lPaYx-gpaur0Y9FBZe7nHRm3hG-iA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly92YXJu/aXlhLmNvbS9jZG4v/c2hvcC9maWxlcy8x/N180MDVmNjE0Ni02/NDBmLTQ0ODgtYWM0/Yy00NTc1NzA4NDhk/OTgucG5nP3Y9MTc1/ODg3MjAzOCZ3aWR0/aD0xNTAw",
-    desc: "A colorless masterpiece with absolute internal perfection.",
+    image: "https://i.pinimg.com/1200x/14/ba/1c/14ba1c773eba9d70ee2022ab9b774cd2.jpg",
+    desc: "Complete size and quality range of certified polish diamonds.",
+  },
+  {
+    id: 7,
+    title: "Custom Cut Diamonds",
+    category: "diamonds",
+    type: "Advanced Geometry",
+    price: "Inquire for Pricing",
+    image: "https://i.pinimg.com/1200x/f3/d3/77/f3d3774352923faecc785f975a86bcaf.jpg",
+    desc: "Diamonds are engineered with advanced geometry and technology to achieve exceptional sparkle and optical balance.",
+  },
+  {
+    id: 8,
+    title: "Rough Diamonds",
+    category: "diamonds",
+    type: "Mine-Direct",
+    price: "Inquire for Pricing",
+    image: "https://i.pinimg.com/736x/85/bb/91/85bb91cdf05d27f24b326af76ed8199a.jpg",
+    desc: "We provide mine-direct rough diamonds, maintaining strict quality standards and ethical sourcing practices.",
   },
   {
     id: 2,
-    title: "Benares Sunset Ruby",
+    title: "Royal Blood Ruby",
     category: "gems",
-    type: "Burmese Unheated",
-    price: "Acquisition Reserved",
+    type: "Premium Ruby",
+    price: "Price on Request",
     image:
-      "https://images.unsplash.com/photo-1599707367072-cd6ada2bc375?auto=format&fit=crop&q=80&w=2400",
-    desc: "Vibrant pigeon-blood hue set in 22k chased gold.",
+      "https://i.pinimg.com/1200x/43/e7/a8/43e7a8e21be139ccdf1f54950faf1d3e.jpg",
+    desc: "From the legendary Mogok mines to Mozambique and Madagascar, offering exceptional red depth.",
   },
   {
     id: 3,
@@ -45,11 +62,11 @@ const products = [
     id: 4,
     title: "Ocean Eye Sapphire",
     category: "gems",
-    type: "Kashmir Blue",
+    type: "Blue Sapphire",
     price: "Price on Request",
     image:
       "/blue.png",
-    desc: "Velvety depth found only in the historic Kashmir mines.",
+    desc: "We specialize in authentic blue sapphires from Kashmir, Sri Lanka, and Burma, carefully selected for superior color, clarity, and character.",
   },
   {
     id: 5,
@@ -62,23 +79,20 @@ const products = [
   },
   {
     id: 6,
-    title: "Lunar Paraiba",
+    title: "Imperial Sun Sapphire",
     category: "gems",
-    type: "Electric Tourmaline",
+    type: "Yellow Sapphire",
     price: "Price on Request",
     image:
-      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=2400",
-    desc: "Neon blue radiance with unmatched copper-bearing glow.",
+      "https://i.pinimg.com/1200x/92/7e/df/927edf0568447025aa3e45b20ab175cb.jpg",
+    desc: "Selected from premium sources in Sri Lanka and Madagascar, our yellow sapphires reflect radiant color and timeless elegance.",
   },
 ];
 
 export default function ProductsPage() {
-  const [activeFilter, setActiveFilter] = useState("all");
+  const [activeFilter, setActiveFilter] = useState("diamonds");
 
-  const filteredProducts =
-    activeFilter === "all"
-      ? products
-      : products.filter((p) => p.category === activeFilter);
+  const filteredProducts = products.filter((p) => p.category === activeFilter);
 
   return (
     <main className="bg-[#021a14] min-h-screen pt-32 selection:bg-[#c0c0c0] selection:text-[#021a14]">
@@ -140,7 +154,7 @@ export default function ProductsPage() {
                     <img
                       src={product.image}
                       alt={product.title}
-                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-transform duration-[2s] scale-110 group-hover:scale-100"
+                      className="w-full h-full object-cover transition-transform duration-[2s] scale-110 group-hover:scale-100"
                     />
                     <div className="absolute bottom-6 left-6 z-20 flex flex-col gap-2">
                       <span className="text-[#c0c0c0] text-[8px] tracking-[0.3em] uppercase bg-[#021a14]/80 px-4 py-2 backdrop-blur-md self-start">
@@ -184,14 +198,14 @@ export default function ProductsPage() {
             Scientific Certification
           </span>
           <h2 className="text-4xl md:text-6xl font-serif text-[#021a14] font-light leading-tight">
-            Our Diamonds are <br className="hidden md:block" />
+            Our diamonds and gemstones are <br className="hidden md:block" />
             evaluated by the{" "}
-            <span className="italic">GIA Graduate Standards</span>.
+            <span className="italic">GIA Standards</span>.
           </h2>
           <p className="text-stone-500 font-light leading-loose text-sm max-w-xl mx-auto">
             Beyond the 4Cs, we analyze the scintillation and light-return of
-            every diamond in our vault. We specialize in Type IIa diamonds—the
-            most chemically pure crystals known to man.
+            every diamond in our vault. We specialise in diamond, ruby,
+            sapphire, emerald.
           </p>
           <Link href="/enquire" className="inline-block px-12 py-5 bg-[#021a14] text-[#c0c0c0] text-[10px] uppercase tracking-[0.4em] hover:bg-[#c0c0c0] hover:text-[#021a14] transition-all duration-700">
             Request Gemmology Consultation

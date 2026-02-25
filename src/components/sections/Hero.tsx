@@ -14,7 +14,7 @@ export const Hero = () => {
       <motion.div style={{ y }} className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-linear-to-b from-[#021a14]/90 via-transparent to-[#021a14] z-10" />
         <img
-          src={BRAND_IMAGES.GOLD_TEXTURE}
+          src="/heroThree.png"
           alt="Hero Brand Motif"
           className="w-full h-full object-cover opacity-30 md:opacity-40 scale-110"
         />

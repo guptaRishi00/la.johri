@@ -13,12 +13,12 @@ import { Hero } from "@/components/sections/Hero";
 import { Craftsmanship } from "@/components/sections/Craftsmanship";
 import { Provenance } from "@/components/sections/Provenance"; // NEW
 import { TheForge } from "@/components/sections/TheForge"; // NEW
-import { EmeraldVault } from "@/components/sections/EmeraldVault";
+
 import { Manifesto } from "@/components/sections/Manifesto";
-import { PrivateConcierge } from "@/components/sections/PrivateConcierge";
+
 import { TheSlowCraft } from "@/components/sections/TheSlowCraft";
 import { ScientificRigor } from "@/components/sections/ScientificRigor";
-import { AncestryLedger } from "@/components/sections/AncestryLedger";
+
 
 export default function LandingPage() {
   const [loading, setLoading] = useState(true);
@@ -42,11 +42,10 @@ export default function LandingPage() {
         <ScientificRigor />
         <Provenance />
         <TheForge />
-        {/* Focus on the diamond/gem science */}
-        <EmeraldVault />
-        <AncestryLedger /> {/* Focus on the provenance guarantee */}
+
+
         <Manifesto />
-        <PrivateConcierge />
+
       </main>
       {!loading && <Footer />}
     </div>

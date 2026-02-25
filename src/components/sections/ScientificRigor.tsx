@@ -12,7 +12,7 @@ export const ScientificRigor = () => {
             Technical Excellence
           </span>
           <h2 className="text-4xl md:text-6xl font-serif text-[#021a14] font-light">
-            The Science of <span className="italic">Scintillation</span>
+            The Journey of <span className="italic">Brilliance</span>
           </h2>
         </div>
 
@@ -29,11 +29,11 @@ export const ScientificRigor = () => {
               strokeWidth={1}
             />
             <h4 className="text-xl font-serif text-[#021a14] mb-4">
-              GIA Graduate Standards
+              International Standards
             </h4>
             <p className="text-xs text-stone-500 leading-relaxed uppercase tracking-widest">
-              Every diamond is evaluated by GIA Graduate standards, focusing on
-              internal perfection and light-return.
+              Every diamond and gemstone is meticulously assessed using global
+              benchmarks, ensuring internal perfection and optimal light return.
             </p>
           </motion.div>
 
@@ -47,12 +47,12 @@ export const ScientificRigor = () => {
           >
             <Zap className="text-[#c0c0c0] w-6 h-6 mb-6" strokeWidth={1} />
             <h4 className="text-xl font-serif text-[#021a14] mb-4">
-              Type IIa Purity
+              Mine-to-You Advantage
             </h4>
             <p className="text-xs text-stone-500 leading-relaxed uppercase tracking-widest">
-              We specialize in Type IIa diamonds—the most chemically pure
-              crystals known to man, showing an inner light that meets our
-              uncompromising standards.
+              By sourcing directly from the mines, we eliminate intermediaries,
+              providing exceptional value, full traceability, and gems of
+              impeccable origin.
             </p>
           </motion.div>
 
@@ -69,11 +69,11 @@ export const ScientificRigor = () => {
               strokeWidth={1}
             />
             <h4 className="text-xl font-serif text-[#021a14] mb-4">
-              Optical Excellence
+              Tailored Excellence
             </h4>
             <p className="text-xs text-stone-500 leading-relaxed uppercase tracking-widest">
-              Gems must reveal a rare combination of deep saturation and
-              remarkable translucency before entering our vault.
+              Every piece is crafted with precision to your exact requirements,
+              uniting technical mastery with your individual vision.
             </p>
           </motion.div>
         </div>

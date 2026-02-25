@@ -60,7 +60,7 @@ export default function AboutPage() {
           >
             <div className="aspect-[4/5] md:aspect-video overflow-hidden border border-[#c0c0c0]/20 bg-emerald-950/20">
               <img
-                src={BRAND_IMAGES.OWNER_PORTRAIT}
+                src="/certi.png"
                 alt="Founder & Gemmologist"
                 className="w-full h-full object-cover transition-all duration-[3s] group-hover:grayscale-0 group-hover:scale-105"
               />
