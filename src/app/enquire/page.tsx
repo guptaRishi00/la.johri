@@ -7,42 +7,11 @@ export default function EnquirePage() {
   return (
     <main className="bg-[#fdfcf9] min-h-screen pt-32 selection:bg-[#c0c0c0] selection:text-[#021a14]">
       <section className="px-6 md:px-12 lg:px-24 pb-24">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-24 items-start">
-          {/* Left Side: Editorial & Context */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1.2 }}
-            className="space-y-12"
-          >
-            <div>
-              <span className="text-[#021a14] uppercase tracking-[0.8em] text-[10px] mb-8 block font-medium">
-                The Private Salon
-              </span>
-              <h1 className="text-6xl md:text-8xl font-serif text-[#021a14] font-light italic leading-none mb-8">
-                Begin a <br /> Conversation
-              </h1>
-              <p className="text-stone-500 text-sm font-light leading-relaxed tracking-wide max-w-md">
-                Whether you are seeking a bespoke commission or a private
-                viewing of the Emerald Vault, our advisors are here to curate
-                your experience.
-              </p>
-            </div>
-
-            <div className="aspect-[4/5] overflow-hidden grayscale hover:grayscale-0 transition-all duration-1000">
-              <img
-                src={BRAND_IMAGES.SALON_AMBIANCE}
-                className="w-full h-full object-cover"
-                alt="Salon Interior"
-              />
-            </div>
-          </motion.div>
-
-          {/* Right Side: High-Touch Form */}
+        <div className="max-w-2xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, delay: 0.3 }}
+            transition={{ duration: 1.2 }}
             className="bg-white p-8 md:p-16 border border-stone-200 shadow-sm"
           >
             <form className="space-y-12">
