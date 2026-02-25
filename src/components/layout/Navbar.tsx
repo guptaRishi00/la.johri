@@ -30,9 +30,9 @@ export const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 w-full z-50 transition-all duration-700 px-4 sm:px-6 md:px-12 py-4 md:py-8 flex justify-between items-center ${isScrolled || isMenuOpen
-            ? "bg-[#021a14]/95 backdrop-blur-xl py-4 md:py-6 shadow-lg"
-            : "bg-transparent"
+        className={`fixed top-0 w-full z-50 transition-all duration-700 px-4 sm:px-6 md:px-12 py-6 md:py-8 flex justify-between items-center ${isScrolled || isMenuOpen
+          ? "bg-[#021a14]/95 backdrop-blur-xl py-5 md:py-6 shadow-lg"
+          : "bg-transparent"
           }`}
       >
         {/* Left Side: Burger & Desktop Links */}
@@ -44,14 +44,14 @@ export const Navbar = () => {
           >
             <span
               className={`h-px bg-[#c0c0c0] transition-all duration-500 ${isMenuOpen
-                  ? "w-6 md:w-8 rotate-45 translate-y-2 md:translate-y-2.5"
-                  : "w-6 md:w-8"
+                ? "w-6 md:w-8 rotate-45 translate-y-2 md:translate-y-2.5"
+                : "w-6 md:w-8"
                 }`}
             />
             <span
               className={`h-px bg-[#c0c0c0] transition-all duration-500 ${isMenuOpen
-                  ? "w-6 md:w-8 -rotate-45"
-                  : "w-4 md:w-5 group-hover:w-6 md:group-hover:w-8"
+                ? "w-6 md:w-8 -rotate-45"
+                : "w-4 md:w-5 group-hover:w-6 md:group-hover:w-8"
                 }`}
             />
           </button>

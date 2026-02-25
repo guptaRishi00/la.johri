@@ -215,7 +215,7 @@ export default function AboutPage() {
       </section>
 
       {/* NEW SECTION: TRUE CRAFTSMANSHIP */}
-      <section className="bg-[#0c0c0c] py-32 px-6 md:px-12 lg:px-24 text-stone-200">
+      <section className="bg-[#021a14] py-32 px-6 md:px-12 lg:px-24 text-stone-200">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-24">
             <span className="text-[#c0c0c0] uppercase tracking-[0.8em] text-[10px] block mb-4">
@@ -234,7 +234,7 @@ export default function AboutPage() {
 
           <div className="grid md:grid-cols-3 gap-12 relative">
             {/* Decorative Line */}
-            <div className="hidden md:block absolute top-12 left-0 w-full h-px bg-stone-800 z-0" />
+            <div className="hidden md:block absolute top-12 left-0 w-full h-px bg-emerald-950/30 z-0" />
 
             {/* Craft Step 1: THE FORGE */}
             <motion.div
@@ -242,9 +242,9 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="relative z-10 bg-[#0c0c0c] pt-8"
+              className="relative z-10 bg-[#021a14] pt-8"
             >
-              <div className="w-16 h-16 bg-[#1a1a1a] flex items-center justify-center border border-stone-800 mb-8 mx-auto rounded-full group hover:border-[#c0c0c0] transition-colors">
+              <div className="w-16 h-16 bg-emerald-950/20 flex items-center justify-center border border-emerald-950/50 mb-8 mx-auto rounded-full group hover:border-[#c0c0c0] transition-colors">
                 <Flame
                   className="text-stone-400 w-6 h-6 group-hover:text-[#c0c0c0]"
                   strokeWidth={1}
@@ -264,9 +264,9 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="relative z-10 bg-[#0c0c0c] pt-8"
+              className="relative z-10 bg-[#021a14] pt-8"
             >
-              <div className="w-16 h-16 bg-[#1a1a1a] flex items-center justify-center border border-stone-800 mb-8 mx-auto rounded-full group hover:border-[#c0c0c0] transition-colors">
+              <div className="w-16 h-16 bg-emerald-950/20 flex items-center justify-center border border-emerald-950/50 mb-8 mx-auto rounded-full group hover:border-[#c0c0c0] transition-colors">
                 <PenTool
                   className="text-stone-400 w-6 h-6 group-hover:text-[#c0c0c0]"
                   strokeWidth={1}
@@ -288,9 +288,9 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
-              className="relative z-10 bg-[#0c0c0c] pt-8"
+              className="relative z-10 bg-[#021a14] pt-8"
             >
-              <div className="w-16 h-16 bg-[#1a1a1a] flex items-center justify-center border border-stone-800 mb-8 mx-auto rounded-full group hover:border-[#c0c0c0] transition-colors">
+              <div className="w-16 h-16 bg-emerald-950/20 flex items-center justify-center border border-emerald-950/50 mb-8 mx-auto rounded-full group hover:border-[#c0c0c0] transition-colors">
                 <Hammer
                   className="text-stone-400 w-6 h-6 group-hover:text-[#c0c0c0]"
                   strokeWidth={1}

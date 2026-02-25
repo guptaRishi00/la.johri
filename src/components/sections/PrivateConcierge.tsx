@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { BRAND_IMAGES } from "@/constants/images";
 
@@ -49,7 +50,7 @@ export const PrivateConcierge = () => {
             and provenance of each piece.
           </p>
 
-          <button className="flex items-center gap-4 text-[10px] md:text-[11px] uppercase tracking-[0.3em] md:tracking-[0.5em] text-[#021a14] group">
+          <Link href="/enquire" className="flex items-center gap-4 text-[10px] md:text-[11px] uppercase tracking-[0.3em] md:tracking-[0.5em] text-[#021a14] group">
             <span className="border-b border-[#021a14]/20 pb-2 group-hover:border-[#c0c0c0] transition-all duration-500 whitespace-nowrap">
               Book Private Viewing
             </span>
@@ -59,7 +60,7 @@ export const PrivateConcierge = () => {
                 className="transition-transform duration-500 group-hover:rotate-45"
               />
             </div>
-          </button>
+          </Link>
         </motion.div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 import { BRAND_IMAGES } from "@/constants/images";
 import { ArrowRight, Filter, ShoppingBag, Sparkles } from "lucide-react";
 
@@ -18,7 +19,7 @@ const products = [
     category: "diamonds",
     type: "3.5ct D-IF Oval",
     price: "Inquire for Pricing",
-    image: BRAND_IMAGES.DIAMOND_HERO,
+    image: "https://imgs.search.brave.com/-DJlJa1mruPad4lPaYx-gpaur0Y9FBZe7nHRm3hG-iA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly92YXJu/aXlhLmNvbS9jZG4v/c2hvcC9maWxlcy8x/N180MDVmNjE0Ni02/NDBmLTQ0ODgtYWM0/Yy00NTc1NzA4NDhk/OTgucG5nP3Y9MTc1/ODg3MjAzOCZ3aWR0/aD0xNTAw",
     desc: "A colorless masterpiece with absolute internal perfection.",
   },
   {
@@ -37,7 +38,7 @@ const products = [
     category: "jewelry",
     type: "Antique Nakshi",
     price: "Inquire for Pricing",
-    image: BRAND_IMAGES.JEWELRY_NECKLACE,
+    image: "/temple.png",
     desc: "A hand-chased gold lineage piece depicting ancient motifs.",
   },
   {
@@ -47,7 +48,7 @@ const products = [
     type: "Kashmir Blue",
     price: "Price on Request",
     image:
-      "https://images.unsplash.com/photo-1588444839799-eb0c5a1bc71a?auto=format&fit=crop&q=80&w=2400",
+      "/blue.png",
     desc: "Velvety depth found only in the historic Kashmir mines.",
   },
   {
@@ -103,11 +104,10 @@ export default function ProductsPage() {
               <button
                 key={cat.id}
                 onClick={() => setActiveFilter(cat.id)}
-                className={`text-[10px] uppercase tracking-[0.4em] transition-all duration-500 pb-2 border-b ${
-                  activeFilter === cat.id
-                    ? "text-[#c0c0c0] border-[#c0c0c0]"
-                    : "text-emerald-100/30 border-transparent hover:text-emerald-100"
-                }`}
+                className={`text-[10px] uppercase tracking-[0.4em] transition-all duration-500 pb-2 border-b ${activeFilter === cat.id
+                  ? "text-[#c0c0c0] border-[#c0c0c0]"
+                  : "text-emerald-100/30 border-transparent hover:text-emerald-100"
+                  }`}
               >
                 {cat.name}
               </button>
@@ -164,9 +164,9 @@ export default function ProductsPage() {
                       <span className="text-[9px] tracking-[0.3em] text-[#c0c0c0] uppercase font-medium">
                         {product.price}
                       </span>
-                      <button className="flex items-center gap-2 text-[8px] text-stone-500 hover:text-stone-100 transition-colors uppercase tracking-[0.4em]">
+                      <Link href="/enquire" className="flex items-center gap-2 text-[8px] text-stone-500 hover:text-stone-100 transition-colors uppercase tracking-[0.4em]">
                         View Details <ArrowRight size={10} />
-                      </button>
+                      </Link>
                     </div>
                   </div>
                 </motion.div>
@@ -193,9 +193,9 @@ export default function ProductsPage() {
             every diamond in our vault. We specialize in Type IIa diamonds—the
             most chemically pure crystals known to man.
           </p>
-          <button className="px-12 py-5 bg-[#021a14] text-[#c0c0c0] text-[10px] uppercase tracking-[0.4em] hover:bg-[#c0c0c0] hover:text-[#021a14] transition-all duration-700">
+          <Link href="/enquire" className="inline-block px-12 py-5 bg-[#021a14] text-[#c0c0c0] text-[10px] uppercase tracking-[0.4em] hover:bg-[#c0c0c0] hover:text-[#021a14] transition-all duration-700">
             Request Gemmology Consultation
-          </button>
+          </Link>
         </div>
       </section>
     </main>
