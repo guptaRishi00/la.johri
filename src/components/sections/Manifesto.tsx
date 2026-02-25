@@ -7,13 +7,14 @@ import { BRAND_IMAGES } from "@/constants/images";
 export const Manifesto = () => {
   return (
     <section className="py-32 md:py-48 lg:py-60 bg-[#021a14] text-center px-6 md:px-12 relative overflow-hidden">
-      {/* Background Texture Overlay */}
-      <div className="absolute inset-0 opacity-10 pointer-events-none">
+      {/* Background Image */}
+      <div className="absolute inset-0 pointer-events-none">
         <img
-          src={BRAND_IMAGES.GOLD_TEXTURE}
-          className="w-full h-full object-cover mix-blend-overlay"
+          src="https://i.pinimg.com/1200x/da/77/37/da7737c162541955ca89008c1e098295.jpg"
+          className="w-full h-full object-cover"
           alt=""
         />
+        <div className="absolute inset-0 bg-[#021a14]/80" />
       </div>
 
       {/* Large Background Watermark - Adjusted for Mobile Scale */}
