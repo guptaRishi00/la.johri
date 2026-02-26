@@ -146,7 +146,7 @@ export default function ProductsPage() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.8 }}
-                  className="group cursor-none"
+                  className="group cursor-pointer"
                 >
                   {/* Image Frame */}
                   <div className="aspect-[3/4] overflow-hidden mb-8 relative bg-emerald-950/20">
@@ -191,9 +191,9 @@ export default function ProductsPage() {
       </section>
 
       {/* DIAMOND MASTERCLASS CALLOUT */}
-      <section className="bg-stone-50 py-32 px-6">
+      <section className="bg-stone-50 py-20 px-6">
         <div className="max-w-4xl mx-auto text-center space-y-12">
-          <div className="w-px h-24 bg-[#021a14]/10 mx-auto" />
+          {/* <div className="w-px h-24 bg-[#021a14]/10 mx-auto" /> */}
           <span className="text-[#021a14] uppercase tracking-[0.8em] text-[10px] block">
             Scientific Certification
           </span>

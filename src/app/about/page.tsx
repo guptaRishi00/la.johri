@@ -64,7 +64,7 @@ export default function AboutPage() {
               <Image
                 width={500}
                 height={500}
-                src="/mobile.png"
+                src="/mobileTwo.png"
                 alt="Founder & Gemmologist"
                 className="w-full h-full object-cover transition-all duration-[3s] group-hover:grayscale-0 group-hover:scale-105"
                 unoptimized

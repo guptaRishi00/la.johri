@@ -75,42 +75,35 @@ export default function EnquirePage() {
             <h6 className="text-[8px] uppercase tracking-[0.4em] text-stone-400">
               Email
             </h6>
-            <p className="text-[10px] tracking-widest text-[#021a14]">
-              concierge@lajohri.com
-            </p>
+            <a href="mailto:Lajohri@gmail.com" className="text-[10px] tracking-widest text-[#021a14] hover:text-[#c0c0c0] transition-colors">
+              Lajohri@gmail.com
+            </a>
           </div>
           <div className="space-y-2">
             <h6 className="text-[8px] uppercase tracking-[0.4em] text-stone-400">
-              Raipur
+              Phone
             </h6>
-            <p className="text-[10px] tracking-widest text-[#021a14]">
-              Chhattisgarh, India
-            </p>
+            <a href="tel:+919131947571" className="text-[10px] tracking-widest text-[#021a14] hover:text-[#c0c0c0] transition-colors">
+              +91 91319 47571
+            </a>
           </div>
           <div className="space-y-2">
             <h6 className="text-[8px] uppercase tracking-[0.4em] text-stone-400">
-              Varanasi
+              Location
             </h6>
             <p className="text-[10px] tracking-widest text-[#021a14]">
-              +91 542 000 1924
+              Raipur, Chhattisgarh
             </p>
           </div>
           <div className="space-y-2">
             <h6 className="text-[8px] uppercase tracking-[0.4em] text-stone-400">
               Instagram
             </h6>
-            <p className="text-[10px] tracking-widest text-[#021a14]">
-              @la.johri.heritage
-            </p>
+            <a href="https://www.instagram.com/la.johri" target="_blank" rel="noopener noreferrer" className="text-[10px] tracking-widest text-[#021a14] hover:text-[#c0c0c0] transition-colors">
+              @la.johri
+            </a>
           </div>
-          <div className="space-y-2">
-            <h6 className="text-[8px] uppercase tracking-[0.4em] text-stone-400">
-              Hours
-            </h6>
-            <p className="text-[10px] tracking-widest text-[#021a14]">
-              By Appointment Only
-            </p>
-          </div>
+
         </div>
       </section>
     </main>
