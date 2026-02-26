@@ -11,6 +11,7 @@ import {
   PenTool,
   Flame,
 } from "lucide-react";
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
@@ -59,10 +60,13 @@ export default function AboutPage() {
             className="lg:col-span-7 order-1 lg:order-2 relative group"
           >
             <div className="aspect-[4/5] md:aspect-video overflow-hidden border border-[#c0c0c0]/20 bg-emerald-950/20">
-              <img
+              <Image
+                width={200}
+                height={200}
                 src="/certi.png"
                 alt="Founder & Gemmologist"
                 className="w-full h-full object-cover transition-all duration-[3s] group-hover:grayscale-0 group-hover:scale-105"
+                unoptimized
               />
             </div>
             <div className="absolute -bottom-6 -left-6 w-32 h-32 border border-[#c0c0c0]/10 pointer-events-none z-10" />
