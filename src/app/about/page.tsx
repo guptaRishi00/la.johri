@@ -59,7 +59,19 @@ export default function AboutPage() {
             transition={{ duration: 1.5 }}
             className="lg:col-span-7 order-1 lg:order-2 relative group"
           >
-            <div className="aspect-[4/5] md:aspect-video overflow-hidden border border-[#c0c0c0]/20 bg-emerald-950/20">
+            {/* Mobile Image */}
+            <div className="block md:hidden aspect-[4/5] overflow-hidden border border-[#c0c0c0]/20 bg-emerald-950/20">
+              <Image
+                width={500}
+                height={500}
+                src="/mobile.png"
+                alt="Founder & Gemmologist"
+                className="w-full h-full object-cover transition-all duration-[3s] group-hover:grayscale-0 group-hover:scale-105"
+                unoptimized
+              />
+            </div>
+            {/* Desktop Image */}
+            <div className="hidden md:block aspect-video overflow-hidden border border-[#c0c0c0]/20 bg-emerald-950/20">
               <Image
                 width={200}
                 height={200}
