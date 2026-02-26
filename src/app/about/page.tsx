@@ -63,7 +63,7 @@ export default function AboutPage() {
               <Image
                 width={200}
                 height={200}
-                src="/certi.png"
+                src="/certi.PNG"
                 alt="Founder & Gemmologist"
                 className="w-full h-full object-cover transition-all duration-[3s] group-hover:grayscale-0 group-hover:scale-105"
                 unoptimized
